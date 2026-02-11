@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 90" width="56" height="90">
+  <!-- Hipper Machines Logo — Golden Ratio (56×90 = 1:1.618)
+       Querbalken: zentriert (y=45), Gap links, konisch→12px parallel
+       Linker Strich: x=0-12
+       Rechter Strich: x=44-56
+       Konisch: x=18 (20px hoch) → x=36 (12px hoch)
+       Parallel: x=36-44 (12px hoch)
+  -->
+  <rect x="0" y="0" width="12" height="90" rx="2" fill="#C41E1E"/>
+  <rect x="44" y="0" width="12" height="90" rx="2" fill="#C41E1E"/>
+  <polygon points="18,35 18,55 36,51 36,39" fill="#C41E1E"/>
+  <rect x="36" y="39" width="8" height="12" fill="#C41E1E"/>
+</svg>

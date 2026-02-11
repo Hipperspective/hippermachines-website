@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Favicon: H zentriert, golden ratio proportional angepasst für Quadrat
+       H proportionen beibehalten, vertikal gestreckt im Quadrat -->
+  <rect width="48" height="48" rx="8" fill="#C41E1E"/>
+  <rect x="7" y="2" width="8" height="44" rx="1" fill="#fff"/>
+  <rect x="33" y="2" width="8" height="44" rx="1" fill="#fff"/>
+  <polygon points="18,18 18,30 28,28 28,21" fill="#fff"/>
+  <rect x="28" y="21" width="5" height="7" fill="#fff"/>
+</svg>
