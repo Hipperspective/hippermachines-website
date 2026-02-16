@@ -29,7 +29,9 @@
     "backToTop": "맨 위로",
     "allRightsReserved": "모든 권리 보유",
     "currency": "€",
-    "inquire": "문의"
+    "inquire": "문의",
+    "priceFrom": "",
+    "priceOnRequest": "가격 문의"
   },
   "home": {
     "heroTitle": "전문 리드 제작을 위한 정밀 기계",

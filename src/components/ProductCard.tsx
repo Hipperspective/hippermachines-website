@@ -12,6 +12,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const tProducts = useTranslations('products');
+  const tCommon = useTranslations('common');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Detect dark mode
@@ -92,11 +93,11 @@ export default function ProductCard({ product }: ProductCardProps) {
           </p>
           {product.priceBrutto > 0 ? (
             <p className="font-body text-sm text-gray-500 dark:text-gray-500">
-              ab {product.priceBrutto.toLocaleString('de-DE')} €
+              {tCommon('priceFrom')} {product.priceBrutto.toLocaleString('de-DE')} €
             </p>
           ) : (
             <p className="font-body text-sm text-gray-500 dark:text-gray-500">
-              Preis auf Anfrage
+              {tCommon('priceOnRequest')}
             </p>
           )}
         </div>

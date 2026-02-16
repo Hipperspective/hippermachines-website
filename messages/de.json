@@ -29,7 +29,9 @@
     "backToTop": "Nach oben",
     "allRightsReserved": "Alle Rechte vorbehalten",
     "currency": "€",
-    "inquire": "Anfragen"
+    "inquire": "Anfragen",
+    "priceFrom": "ab",
+    "priceOnRequest": "Preis auf Anfrage"
   },
   "home": {
     "heroTitle": "Mehr Zeit für Musik. Weniger Zeit am Schabetisch.",

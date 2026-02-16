@@ -29,7 +29,9 @@
     "backToTop": "返回顶部",
     "allRightsReserved": "版权所有",
     "currency": "€",
-    "inquire": "询价"
+    "inquire": "询价",
+    "priceFrom": "",
+    "priceOnRequest": "价格请咨询"
   },
   "home": {
     "heroTitle": "专业簧片制作精密机械",

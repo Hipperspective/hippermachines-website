@@ -29,7 +29,9 @@
     "backToTop": "ページトップへ",
     "allRightsReserved": "無断転載禁止",
     "currency": "€",
-    "inquire": "お問い合わせ"
+    "inquire": "お問い合わせ",
+    "priceFrom": "",
+    "priceOnRequest": "価格はお問い合わせください"
   },
   "home": {
     "heroTitle": "プロフェッショナルなリード製作のための精密機械",

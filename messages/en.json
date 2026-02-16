@@ -29,7 +29,9 @@
     "backToTop": "Back to Top",
     "allRightsReserved": "All Rights Reserved",
     "currency": "€",
-    "inquire": "Inquire"
+    "inquire": "Inquire",
+    "priceFrom": "from",
+    "priceOnRequest": "Price on request"
   },
   "home": {
     "heroTitle": "Precision Machines for Professional Reed Making",

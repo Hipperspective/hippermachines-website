@@ -235,11 +235,11 @@ export default function ProductDetail({ product, category }: ProductDetailProps)
           {/* Price - Subtle */}
           {product.priceBrutto > 0 ? (
             <p className="font-body text-lg text-gray-500 dark:text-gray-400 mb-8">
-              ab {product.priceBrutto.toLocaleString('de-DE')} €
+              {tCommon('priceFrom')} {product.priceBrutto.toLocaleString('de-DE')} €
             </p>
           ) : (
             <p className="font-body text-lg text-gray-500 dark:text-gray-400 mb-8">
-              Preis auf Anfrage
+              {tCommon('priceOnRequest')}
             </p>
           )}
 
