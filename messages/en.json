@@ -116,7 +116,15 @@
       "innerPlaner": "Gouging Machine, Bassoon or Contrabassoon",
       "innerPlanerCutter": "Replacement Cutter Gouging Machine",
       "windingMachine": "Winding Machine",
-      "windingMachineShort": "Winds the thread evenly and tight – saves time and frustration"
+      "windingMachineShort": "Winds the thread evenly and tight – saves time and frustration",
+      "ausreiber": "Reamer with Stop",
+      "ausreiberShort": "Precise reaming with adjustable depth stop",
+      "aufbindedorn": "Binding Mandrel",
+      "aufbindedornShort": "Conical brass mandrel for binding reeds",
+      "schabedorn": "Scraping Mandrel",
+      "schabedornShort": "Perfectly shaped mandrel for precise scraping",
+      "aufdrueckdorn": "Pressing Mandrel",
+      "aufdrueckdornShort": "For reviving and reshaping older reeds"
     },
     "oboe": {
       "title": "Oboe Products",
@@ -157,6 +165,26 @@
       "description": "New design enables profiling in one run, i.e. the cane doesn't have to be turned and can be machined continuously.",
       "dryMilling": "The cane doesn't have to be soaked. The profiling machine mills dry cane.",
       "cutter": "The cutter is carbide tipped, it stays sharp for many, many reeds!"
+    },
+    "ausreiber": {
+      "intro": "Hand tool for bassoon reed making.",
+      "description": "The reamer with adjustable stop allows precise and reproducible reaming of the cane. The depth stop guarantees consistent results with every reed.",
+      "features": "High-quality spiral drill bit made of hardened steel. The stop is infinitely adjustable for individual settings."
+    },
+    "aufbindedorn": {
+      "intro": "Classic tool for bassoon reed making.",
+      "description": "The conical brass mandrel is used for binding the reeds. The precisely crafted shape ensures optimal fit and facilitates even winding.",
+      "features": "Made from solid brass with an ergonomic wooden handle for comfortable working."
+    },
+    "schabedorn": {
+      "intro": "Essential for precise scraping.",
+      "description": "The scraping mandrel provides the perfect support for fine scraping. The optimal contour supports even wall thicknesses.",
+      "features": "Precision-turned brass tip with ergonomic beechwood handle."
+    },
+    "aufdrueckdorn": {
+      "intro": "For reviving old reeds.",
+      "description": "The pressing mandrel can be used to reshape older reeds. Ideal for reforming and correcting the opening.",
+      "features": "Conical brass tip with fine surface for gentle pressing."
     }
   },
   "contact": {

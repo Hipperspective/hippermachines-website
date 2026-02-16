@@ -118,7 +118,15 @@
       "innerPlanerShort": "Hobelt die Innenwölbung präzise aus – die Basis für guten Klang",
       "innerPlanerCutter": "Ersatzfräser Innenhobel",
       "windingMachine": "Wickelmaschine",
-      "windingMachineShort": "Wickelt den Faden gleichmässig und fest – spart Zeit und Nerven"
+      "windingMachineShort": "Wickelt den Faden gleichmässig und fest – spart Zeit und Nerven",
+      "ausreiber": "Ausreiber mit Anschlag",
+      "ausreiberShort": "Präzises Ausreiben des Rohrholzes mit einstellbarem Tiefenanschlag",
+      "aufbindedorn": "Aufbindedorn",
+      "aufbindedornShort": "Konischer Messingdorn zum Aufbinden der Rohre",
+      "schabedorn": "Schabedorn",
+      "schabedornShort": "Perfekt geformter Dorn für präzises Schaben",
+      "aufdrueckdorn": "Aufdrückdorn",
+      "aufdrueckdornShort": "Zum Wiederbeleben und Nachformen älterer Rohre"
     },
     "oboe": {
       "title": "Oboe-Maschinen",
@@ -165,6 +173,26 @@
       "description": "Gleichmäßiges, professionelles Wickeln leicht gemacht. Diese Maschine nimmt Ihnen die mühsamste Handarbeit ab und liefert reproduzierbar perfekte Ergebnisse.",
       "features": "Konstante Spannung, gleichmäßige Wicklung – jedes Mal. Was von Hand schwierig und ermüdend ist, wird mit dieser Maschine zum Kinderspiel.",
       "benefit": "Zeit sparen und bessere Ergebnisse: Die perfekte Kombination für alle, die regelmäßig Rohre wickeln müssen."
+    },
+    "ausreiber": {
+      "intro": "Handwerkzeug für Fagott-Rohrbau.",
+      "description": "Der Ausreiber mit einstellbarem Anschlag ermöglicht präzises und reproduzierbares Ausreiben des Rohrholzes. Der Tiefenanschlag garantiert gleichmäßige Ergebnisse bei jedem Rohr.",
+      "features": "Hochwertige Spiralbohrer-Spitze aus gehärtetem Stahl. Der Anschlag ist stufenlos verstellbar für individuelle Einstellungen."
+    },
+    "aufbindedorn": {
+      "intro": "Klassisches Werkzeug für den Fagott-Rohrbau.",
+      "description": "Der konische Messingdorn dient zum Aufbinden der Rohre. Die präzise gefertigte Form sorgt für optimalen Sitz und erleichtert das gleichmäßige Wickeln.",
+      "features": "Aus massivem Messing gefertigt, mit ergonomischem Holzgriff für komfortables Arbeiten."
+    },
+    "schabedorn": {
+      "intro": "Unverzichtbar für präzises Schaben.",
+      "description": "Der Schabedorn bietet die perfekte Unterlage für feines Schaben. Die optimale Kontur unterstützt gleichmäßige Wandstärken.",
+      "features": "Präzise gedrehte Messingspitze mit ergonomischem Buchenholz-Griff."
+    },
+    "aufdrueckdorn": {
+      "intro": "Zum Wiederbeleben alter Rohre.",
+      "description": "Mit dem Aufdrückdorn können ältere Rohre wieder in Form gebracht werden. Ideal zum Nachformen und Korrigieren der Öffnung.",
+      "features": "Konische Messingspitze mit feiner Oberfläche für schonendes Aufdrücken."
     }
   },
   "contact": {

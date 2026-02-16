@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
@@ -11,6 +12,21 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const tProducts = useTranslations('products');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Detect dark mode
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+
+    checkDarkMode();
+
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    return () => observer.disconnect();
+  }, []);
 
   // Get the product name and short description from the translation key
   const getProductInfo = () => {
@@ -29,14 +45,19 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { name: productName, shortDesc } = getProductInfo();
   const detailUrl = `/products/${product.category}/${product.id}`;
 
+  // Use dark image if available and in dark mode
+  const lightImage = product.image;
+  const darkImage = product.imagesDark?.[0] || lightImage;
+  const displayImage = isDarkMode ? darkImage : lightImage;
+
   return (
     <Link href={detailUrl} className="block group">
       <div className="bg-white dark:bg-[#252220] rounded-xl shadow-md dark:shadow-[0_0_0_1px_rgba(255,255,255,0.05)] overflow-hidden hover:shadow-xl dark:hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 transition-all duration-500">
         {/* Product Image */}
         <div className="relative h-48 bg-gray-100 dark:bg-[#2A2725]">
-          {product.image ? (
+          {displayImage ? (
             <Image
-              src={product.image}
+              src={displayImage}
               alt={productName}
               fill
               className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
@@ -69,9 +90,15 @@ export default function ProductCard({ product }: ProductCardProps) {
           <p className="font-body text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
             {shortDesc}
           </p>
-          <p className="font-body text-sm text-gray-500 dark:text-gray-500">
-            ab {product.priceBrutto.toLocaleString('de-DE')} €
-          </p>
+          {product.priceBrutto > 0 ? (
+            <p className="font-body text-sm text-gray-500 dark:text-gray-500">
+              ab {product.priceBrutto.toLocaleString('de-DE')} €
+            </p>
+          ) : (
+            <p className="font-body text-sm text-gray-500 dark:text-gray-500">
+              Preis auf Anfrage
+            </p>
+          )}
         </div>
       </div>
     </Link>

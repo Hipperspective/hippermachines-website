@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
@@ -13,10 +13,26 @@ interface ProductDetailProps {
 
 export default function ProductDetail({ product, category }: ProductDetailProps) {
   const [currentImage, setCurrentImage] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const tProducts = useTranslations('products');
   const tCommon = useTranslations('common');
   const tDesc = useTranslations('productDescriptions');
   const tNav = useTranslations('navigation');
+
+  // Detect dark mode
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+
+    checkDarkMode();
+
+    // Watch for class changes on html element
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    return () => observer.disconnect();
+  }, []);
 
   // Get the product name from the translation key
   const getProductName = () => {
@@ -30,7 +46,11 @@ export default function ProductDetail({ product, category }: ProductDetailProps)
   };
 
   const productName = getProductName();
-  const images = product.images || (product.image ? [product.image] : []);
+
+  // Use dark images if available and in dark mode
+  const lightImages = product.images || (product.image ? [product.image] : []);
+  const darkImages = product.imagesDark || lightImages;
+  const images = isDarkMode ? darkImages : lightImages;
 
   // Determine which description to show based on product ID
   const getDescription = () => {
@@ -77,6 +97,42 @@ export default function ProductDetail({ product, category }: ProductDetailProps)
         features: tDesc('windingMachine.features'),
         benefit: tDesc('windingMachine.benefit'),
         type: 'windingMachine' as const,
+      };
+    }
+    // Ausreiber
+    if (product.id.includes('ausreiber')) {
+      return {
+        intro: tDesc('ausreiber.intro'),
+        description: tDesc('ausreiber.description'),
+        features: tDesc('ausreiber.features'),
+        type: 'tool' as const,
+      };
+    }
+    // Aufbindedorn
+    if (product.id.includes('aufbindedorn')) {
+      return {
+        intro: tDesc('aufbindedorn.intro'),
+        description: tDesc('aufbindedorn.description'),
+        features: tDesc('aufbindedorn.features'),
+        type: 'tool' as const,
+      };
+    }
+    // Schabedorn
+    if (product.id.includes('schabedorn')) {
+      return {
+        intro: tDesc('schabedorn.intro'),
+        description: tDesc('schabedorn.description'),
+        features: tDesc('schabedorn.features'),
+        type: 'tool' as const,
+      };
+    }
+    // Aufdrueckdorn
+    if (product.id.includes('aufdrueckdorn')) {
+      return {
+        intro: tDesc('aufdrueckdorn.intro'),
+        description: tDesc('aufdrueckdorn.description'),
+        features: tDesc('aufdrueckdorn.features'),
+        type: 'tool' as const,
       };
     }
     // Accessories and smaller products - no long description
@@ -177,9 +233,15 @@ export default function ProductDetail({ product, category }: ProductDetailProps)
           <h1 className="font-heading text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-2">{productName}</h1>
 
           {/* Price - Subtle */}
-          <p className="font-body text-lg text-gray-500 dark:text-gray-400 mb-8">
-            ab {product.priceBrutto.toLocaleString('de-DE')} €
-          </p>
+          {product.priceBrutto > 0 ? (
+            <p className="font-body text-lg text-gray-500 dark:text-gray-400 mb-8">
+              ab {product.priceBrutto.toLocaleString('de-DE')} €
+            </p>
+          ) : (
+            <p className="font-body text-lg text-gray-500 dark:text-gray-400 mb-8">
+              Preis auf Anfrage
+            </p>
+          )}
 
           {description && (
             <div className="prose prose-gray dark:prose-invert max-w-none mb-10 font-body text-left">
@@ -223,6 +285,13 @@ export default function ProductDetail({ product, category }: ProductDetailProps)
                   <p className="text-gray-700 dark:text-gray-300 mb-3">{description.description}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-3">{description.features}</p>
                   <p className="text-gray-600 dark:text-gray-400">{description.benefit}</p>
+                </>
+              )}
+
+              {description.type === 'tool' && (
+                <>
+                  <p className="text-gray-700 dark:text-gray-300 mb-3">{description.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400">{description.features}</p>
                 </>
               )}
             </div>

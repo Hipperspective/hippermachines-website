@@ -7,6 +7,7 @@ export interface Product {
   vatRate: number;
   image?: string;
   images?: string[];
+  imagesDark?: string[];
   descriptionKey?: string;
 }
 
@@ -58,6 +59,74 @@ export const products: Product[] = [
       '/images/products/wickelmaschine-3.jpg',
       '/images/products/wickelmaschine-4.jpg',
     ],
+  },
+  {
+    id: 'bassoon-ausreiber',
+    category: 'bassoon',
+    nameKey: 'products.bassoon.ausreiber',
+    priceNet: 0,
+    priceBrutto: 0,
+    vatRate: 19,
+    image: '/images/products/ausreiber-1-light.png',
+    images: [
+      '/images/products/ausreiber-1-light.png',
+      '/images/products/ausreiber-2-light.png',
+      '/images/products/ausreiber-3-light.png',
+    ],
+    imagesDark: [
+      '/images/products/ausreiber-1-dark.png',
+      '/images/products/ausreiber-2-dark.png',
+      '/images/products/ausreiber-3-dark.png',
+    ],
+    descriptionKey: 'productDescriptions.ausreiber',
+  },
+  {
+    id: 'bassoon-aufbindedorn',
+    category: 'bassoon',
+    nameKey: 'products.bassoon.aufbindedorn',
+    priceNet: 0,
+    priceBrutto: 0,
+    vatRate: 19,
+    image: '/images/products/aufbindedorn-1-light.png',
+    images: [
+      '/images/products/aufbindedorn-1-light.png',
+    ],
+    imagesDark: [
+      '/images/products/aufbindedorn-1-dark.png',
+    ],
+    descriptionKey: 'productDescriptions.aufbindedorn',
+  },
+  {
+    id: 'bassoon-schabedorn',
+    category: 'bassoon',
+    nameKey: 'products.bassoon.schabedorn',
+    priceNet: 0,
+    priceBrutto: 0,
+    vatRate: 19,
+    image: '/images/products/schabedorn-1-light.png',
+    images: [
+      '/images/products/schabedorn-1-light.png',
+    ],
+    imagesDark: [
+      '/images/products/schabedorn-1-dark.png',
+    ],
+    descriptionKey: 'productDescriptions.schabedorn',
+  },
+  {
+    id: 'bassoon-aufdrueckdorn',
+    category: 'bassoon',
+    nameKey: 'products.bassoon.aufdrueckdorn',
+    priceNet: 0,
+    priceBrutto: 0,
+    vatRate: 19,
+    image: '/images/products/aufdrueckdorn-1-light.png',
+    images: [
+      '/images/products/aufdrueckdorn-1-light.png',
+    ],
+    imagesDark: [
+      '/images/products/aufdrueckdorn-1-dark.png',
+    ],
+    descriptionKey: 'productDescriptions.aufdrueckdorn',
   },
 ];
 

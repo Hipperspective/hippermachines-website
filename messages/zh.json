@@ -118,7 +118,15 @@
       "innerPlanerShort": "精确刨削内部曲面 – 优质音色的基础",
       "innerPlanerCutter": "内刮机替换刀头",
       "windingMachine": "绕线机",
-      "windingMachineShort": "均匀牢固地缠绕丝线 – 节省时间和精力"
+      "windingMachineShort": "均匀牢固地缠绕丝线 – 节省时间和精力",
+      "ausreiber": "带止动器的铰刀",
+      "ausreiberShort": "可调深度止动器实现精确铰孔",
+      "aufbindedorn": "绑扎心轴",
+      "aufbindedornShort": "用于绑扎哨片的锥形黄铜心轴",
+      "schabedorn": "刮削心轴",
+      "schabedornShort": "用于精确刮削的完美形状",
+      "aufdrueckdorn": "压制心轴",
+      "aufdrueckdornShort": "用于恢复和重塑旧哨片"
     },
     "oboe": {
       "title": "双簧管产品",
@@ -159,6 +167,26 @@
       "description": "新设计允许一次完成外刮加工，即芦苇无需翻转，可连续加工。",
       "dryMilling": "芦苇无需浸泡。外刮机可加工干燥芦苇。",
       "cutter": "刀头采用硬质合金，保持锋利可加工大量簧片！"
+    },
+    "ausreiber": {
+      "intro": "大管簧片制作手工工具。",
+      "description": "带可调止动器的铰刀可实现芦苇的精确和可重复铰孔。深度止动器保证每次都能获得一致的结果。",
+      "features": "硬化钢制高品质螺旋钻头。止动器可无级调节以适应个人设置。"
+    },
+    "aufbindedorn": {
+      "intro": "大管簧片制作的经典工具。",
+      "description": "锥形黄铜心轴用于绑扎簧片。精密制作的形状确保最佳贴合，便于均匀缠绕。",
+      "features": "由实心黄铜制成，配有符合人体工程学的木质手柄，工作舒适。"
+    },
+    "schabedorn": {
+      "intro": "精确刮削不可或缺。",
+      "description": "刮削心轴为精细刮削提供完美支撑。最佳轮廓支持均匀的壁厚。",
+      "features": "精密车削黄铜尖端，配有符合人体工程学的山毛榉木手柄。"
+    },
+    "aufdrueckdorn": {
+      "intro": "用于恢复旧簧片。",
+      "description": "压制心轴可用于重塑旧簧片的形状。非常适合重新成型和校正开口。",
+      "features": "锥形黄铜尖端，表面光滑，便于轻柔压制。"
     }
   },
   "contact": {
