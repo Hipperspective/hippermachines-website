@@ -42,6 +42,7 @@ export const products: Product[] = [
       '/images/products/innenhobel-2.jpg',
       '/images/products/innenhobel-3.jpg',
       '/images/products/innenhobel-4.jpg',
+      '/images/products/innenhobel-5.jpg',
     ],
     descriptionKey: 'productDescriptions.gougingMachine',
   },
