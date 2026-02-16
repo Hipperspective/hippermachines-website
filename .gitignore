@@ -41,9 +41,12 @@ yarn-error.log*
 next-env.d.ts
 
 # Temporary photo files in root
-*.JPG
-*.jpg
-DSC_*
+/*.JPG
+/*.jpg
+/DSC_*
+# But keep product images
+!public/images/products/*.jpg
+!public/images/products/*.JPG
 favicon-hipper.svg
 logo-hipper-icon.svg
 
