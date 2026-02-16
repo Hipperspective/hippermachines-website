@@ -64,8 +64,8 @@ export const products: Product[] = [
     id: 'bassoon-ausreiber',
     category: 'bassoon',
     nameKey: 'products.bassoon.ausreiber',
-    priceNet: 0,
-    priceBrutto: 0,
+    priceNet: 49.58,
+    priceBrutto: 59.00,
     vatRate: 19,
     image: '/images/products/ausreiber-1-light.png',
     images: [
@@ -84,8 +84,8 @@ export const products: Product[] = [
     id: 'bassoon-aufbindedorn',
     category: 'bassoon',
     nameKey: 'products.bassoon.aufbindedorn',
-    priceNet: 0,
-    priceBrutto: 0,
+    priceNet: 19.00,
+    priceBrutto: 22.60,
     vatRate: 19,
     image: '/images/products/aufbindedorn-1-light.png',
     images: [
@@ -100,8 +100,8 @@ export const products: Product[] = [
     id: 'bassoon-schabedorn',
     category: 'bassoon',
     nameKey: 'products.bassoon.schabedorn',
-    priceNet: 0,
-    priceBrutto: 0,
+    priceNet: 16.81,
+    priceBrutto: 20.00,
     vatRate: 19,
     image: '/images/products/schabedorn-1-light.png',
     images: [
@@ -116,8 +116,8 @@ export const products: Product[] = [
     id: 'bassoon-aufdrueckdorn',
     category: 'bassoon',
     nameKey: 'products.bassoon.aufdrueckdorn',
-    priceNet: 0,
-    priceBrutto: 0,
+    priceNet: 16.81,
+    priceBrutto: 20.00,
     vatRate: 19,
     image: '/images/products/aufdrueckdorn-1-light.png',
     images: [
