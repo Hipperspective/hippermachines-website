@@ -14,6 +14,21 @@ export interface Product {
 export const products: Product[] = [
   // BASSOON PRODUCTS
   {
+    id: 'bassoon-winding-machine',
+    category: 'bassoon',
+    nameKey: 'products.bassoon.windingMachine',
+    priceNet: 293.28,
+    priceBrutto: 349.00,
+    vatRate: 19,
+    image: '/images/products/wickelmaschine-1.jpg',
+    images: [
+      '/images/products/wickelmaschine-1.jpg',
+      '/images/products/wickelmaschine-2.jpg',
+      '/images/products/wickelmaschine-3.jpg',
+      '/images/products/wickelmaschine-4.jpg',
+    ],
+  },
+  {
     id: 'bassoon-outer-planer',
     category: 'bassoon',
     nameKey: 'products.bassoon.outerPlaner',
@@ -45,21 +60,6 @@ export const products: Product[] = [
       '/images/products/innenhobel-5.jpg',
     ],
     descriptionKey: 'productDescriptions.gougingMachine',
-  },
-  {
-    id: 'bassoon-winding-machine',
-    category: 'bassoon',
-    nameKey: 'products.bassoon.windingMachine',
-    priceNet: 587.39,
-    priceBrutto: 699.00,
-    vatRate: 19,
-    image: '/images/products/wickelmaschine-1.jpg',
-    images: [
-      '/images/products/wickelmaschine-1.jpg',
-      '/images/products/wickelmaschine-2.jpg',
-      '/images/products/wickelmaschine-3.jpg',
-      '/images/products/wickelmaschine-4.jpg',
-    ],
   },
   {
     id: 'bassoon-ausreiber',

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Hipper Machines - 簧片制作精密机械",
-    "description": "木管乐器簧片制作专业机械制造商。大管和双簧管簧片制作高品质机械。"
+    "title": "Hippermachines — 大管绕线机 | 首款实惠的哨片绕线机",
+    "description": "Hippermachines绕线机：2分钟内精准完成大管哨片绕线。€349（含增值税）。德国巴伐利亚手工制作。"
   },
   "navigation": {
     "home": "首页",
@@ -34,8 +34,41 @@
     "priceOnRequest": "价格请咨询"
   },
   "home": {
-    "heroTitle": "专业簧片制作精密机械",
-    "heroSubtitle": "大管和双簧管高品质专业机械 – 由音乐家为音乐家研发",
+    "heroTitle": "告别手工绕线。",
+    "heroSubtitle": "2分钟内完美完成大管哨片绕线。€349（含增值税）起。",
+    "orderNow": "立即订购",
+    "priceDisplay": "€349（含增值税）",
+    "videoPlaceholder": "产品视频",
+    "problemTitle": "这些情况您是否熟悉",
+    "problemText": "每支哨片5-10分钟。手指疼痛。结果却不均匀。缠绕是哨片制作中最耗时、最令人沮丧的步骤之一。",
+    "problemTime": "每支哨片5-10分钟",
+    "problemStrain": "手指疲劳",
+    "problemInconsistent": "结果不一致",
+    "featuresTitle": "绕线机特点",
+    "feature1Title": "2分钟内完成",
+    "feature1Desc": "完整的缠绕图案 — 不仅仅是旋转，而是真正的图案引导",
+    "feature2Title": "铝制精密部件",
+    "feature2Desc": "心轴夹头、夹具、曲柄均采用高品质铝材",
+    "feature3Title": "左右手通用",
+    "feature3Desc": "轻松切换",
+    "feature4Title": "大管和低音大管",
+    "feature4Desc": "包含两种心轴尺寸",
+    "feature5Title": "紧凑设计",
+    "feature5Desc": "最少的设置即可开始使用",
+    "personalizationTitle": "您的机器。您的名字。",
+    "personalizationText": "所有绕线机均可按要求个性化定制：在机器上印上您的名字或首字母缩写。外壳颜色也可选择。",
+    "personalizationInstitutional": "欢迎机构订单 — 大学标志、乐团品牌、毕业礼品。",
+    "personalizationNote": "请发送电子邮件咨询。",
+    "orderTitle": "如何订购",
+    "orderStep1": "发送邮件",
+    "orderStep1Desc": "发送简单邮件至 info@hippermachines.com",
+    "orderStep2": "我们回复",
+    "orderStep2Desc": "确认您的订单并发送付款详情",
+    "orderStep3": "我们制作",
+    "orderStep3Desc": "手工制作机器并发货",
+    "orderStep4": "开始绕线",
+    "orderStep4Desc": "每次都完美",
+    "orderCta": "通过邮件订购",
     "viewProducts": "探索产品",
     "contactUs": "联系我们",
     "categoriesTitle": "产品类别",
@@ -97,6 +130,7 @@
     "workshopImageAlt": "工坊照片"
   },
   "products": {
+    "newBadge": "新品",
     "bassoonPageSubtitle": "探索我们专业大管簧片制作的高品质机械和工具。",
     "oboePageSubtitle": "探索我们为专业双簧管簧片制作打造的精密机械。",
     "bassoon": {

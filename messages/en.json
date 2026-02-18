@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Hipper Machines - Precision Machines for Reed Making",
-    "description": "Specialist machine manufacturer for woodwind reed making. High-quality machines for bassoon and oboe reeds."
+    "title": "Hippermachines — Bassoon Winding Machine | The First Affordable Reed Winding Machine",
+    "description": "The Hippermachines Winding Machine: Precise bassoon reed winding in under 2 minutes. €349 incl. VAT. Handcrafted in Bavaria, Germany."
   },
   "navigation": {
     "home": "Home",
@@ -34,51 +34,113 @@
     "priceOnRequest": "Price on request"
   },
   "home": {
-    "heroTitle": "Precision Machines for Professional Reed Making",
-    "heroSubtitle": "High-quality specialty machines for bassoon and oboe – developed by musicians for musicians",
-    "viewProducts": "Discover Products",
-    "contactUs": "Contact Us",
-    "categoriesTitle": "Our Product Categories",
-    "categoriesSubtitle": "Discover our specialized machines for bassoon and oboe",
-    "bassoonDescription": "Unique tip-profiling machines and gouging machines for professional bassoon reed making",
-    "oboeDescription": "Precision gouging machines for oboe, cor anglais, and Viennese oboe",
-    "ctaTitle": "Interested in Our Products?",
-    "ctaSubtitle": "Contact us for personalized consultation",
-    "ctaButton": "Inquire Now",
-    "featured": {
-      "badge": "Flagship Product",
-      "title": "Profiling Machine Bassoon",
-      "description": "Innovative design allows profiling in a single setup – no need to turn the cane, it can be milled in one continuous pass.",
-      "feature1": "No soaking required – works with dry cane",
-      "feature2": "Carbide-tipped cutter for long service life",
-      "feature3": "Fully motorized for series production",
+    "hero": {
+      "title": "The First Affordable Winding Machine.",
+      "subtitle": "Perfect bassoon reed winding in under 2 minutes.",
+      "priceFrom": "From 349 EUR incl. VAT",
+      "orderNow": "Order Now",
       "learnMore": "Learn More",
-      "sendInquiry": "Send Inquiry"
+      "videoLabel": "Product Video"
     },
     "trust": {
-      "handmade": "Handcrafted",
+      "handmade": "Handcrafted in Bavaria",
       "worldwide": "Worldwide Shipping",
-      "byMusicians": "By Musicians for Musicians",
-      "madeInGermany": "Made in Germany"
+      "byMusicians": "By Musicians for Musicians"
     },
-    "usps": {
-      "title": "Why Hipper Machines?",
-      "noDrying": {
-        "title": "No Soaking Required",
-        "description": "Our machines work with dry cane"
+    "problem": {
+      "title": "The Problem with Hand Winding",
+      "time": {
+        "title": "Time-Consuming",
+        "description": "5-10 minutes per reed, just for winding the turban. That adds up to hours every week."
       },
-      "carbide": {
-        "title": "Carbide Cutters",
-        "description": "Stays sharp for many, many reeds"
-      },
-      "playable": {
-        "title": "Instantly Playable Reeds",
-        "description": "No more tedious break-in time necessary"
-      },
-      "adaptable": {
-        "title": "Versatile Applications",
-        "description": "Can be adapted for any double reed instrument"
+      "strain": {
+        "title": "Strain & Inconsistency",
+        "description": "Aching fingers, inconsistent tension, and uneven patterns. Every reed is a struggle."
       }
+    },
+    "features": {
+      "title": "What Makes the Wickelmaschine Special",
+      "subtitle": "Designed by a bassoonist, for bassoonists. Every detail matters.",
+      "speed": {
+        "title": "Under 2 Minutes",
+        "description": "Complete turban pattern with consistent tension and clean results."
+      },
+      "aluminum": {
+        "title": "Aluminum Precision",
+        "description": "All contact surfaces machined from high-quality aluminum for durability."
+      },
+      "ambidextrous": {
+        "title": "Left & Right Handed",
+        "description": "Easily switchable for both left and right-handed musicians."
+      },
+      "mandrels": {
+        "title": "Bassoon & Contrabassoon",
+        "description": "Both mandrel sizes included as standard."
+      },
+      "compact": {
+        "title": "Compact Design",
+        "description": "Minimal footprint, ready to use immediately. No complex setup."
+      },
+      "tension": {
+        "title": "Consistent Tension",
+        "description": "Even thread tension throughout. No more loose spots or overtightening."
+      }
+    },
+    "personalization": {
+      "badge": "Premium Option",
+      "title": "Your Machine. Your Name.",
+      "description": "Every winding machine can be personalized on request. Make it truly yours.",
+      "feature1": "Your name or initials printed on the machine",
+      "feature2": "Housing filament color selectable on request",
+      "feature3": "Institutional orders welcome: university logos, orchestra branding, graduation gifts"
+    },
+    "howToOrder": {
+      "title": "How to Order",
+      "subtitle": "No online shop, no checkout. Just a personal email exchange.",
+      "steps": {
+        "email": {
+          "title": "Email Us",
+          "description": "Write to info@hippermachines.com with your order"
+        },
+        "confirm": {
+          "title": "We Confirm",
+          "description": "We confirm details and send payment information"
+        },
+        "build": {
+          "title": "We Build",
+          "description": "Your machine is handcrafted and shipped"
+        },
+        "wind": {
+          "title": "Start Winding",
+          "description": "Perfect results, every time"
+        }
+      },
+      "cta": "Order via Email"
+    },
+    "machines": {
+      "title": "Our Machines",
+      "subtitle": "Precision tools for professional reed making",
+      "newBadge": "NEW",
+      "priceFrom": "from",
+      "viewAll": "View All Products",
+      "windingMachine": {
+        "name": "Wickelmaschine",
+        "desc": "Perfect turban winding in under 2 minutes. Consistent tension, clean pattern."
+      },
+      "outerPlaner": {
+        "name": "Profiling Machine",
+        "desc": "Profile cane in a single pass. No soaking required. Carbide-tipped cutter."
+      },
+      "innerPlaner": {
+        "name": "Gouging Machine",
+        "desc": "Precise gouging with or without center dip. Works with dry cane."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Save Hours Every Week?",
+      "subtitle": "Order your Wickelmaschine today. Handcrafted in Bavaria, shipped worldwide.",
+      "orderButton": "Order via Email",
+      "contactButton": "Ask a Question"
     }
   },
   "about": {
@@ -97,6 +159,7 @@
     "workshopImageAlt": "Workshop Image"
   },
   "products": {
+    "newBadge": "NEW",
     "bassoonPageSubtitle": "Discover our high-quality machines and tools for professional bassoon reed making.",
     "oboePageSubtitle": "Discover our specialized machines for professional oboe reed making.",
     "bassoon": {

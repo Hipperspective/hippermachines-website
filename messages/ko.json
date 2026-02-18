@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Hipper Machines - 리드 제작을 위한 정밀 기계",
-    "description": "목관악기 리드 제작 전문 기계 제조업체. 바순과 오보에 리드를 위한 고품질 기계."
+    "title": "Hippermachines — 바순 와인딩 머신 | 최초의 합리적인 가격의 리드 와인딩 머신",
+    "description": "Hippermachines 와인딩 머신: 2분 이내에 정밀한 바순 리드 감기. €349(부가세 포함). 독일 바이에른에서 수제작."
   },
   "navigation": {
     "home": "홈",
@@ -34,8 +34,41 @@
     "priceOnRequest": "가격 문의"
   },
   "home": {
-    "heroTitle": "전문 리드 제작을 위한 정밀 기계",
-    "heroSubtitle": "바순과 오보에를 위한 고품질 전문 기계 – 음악가가 음악가를 위해 개발",
+    "heroTitle": "손 감기는 이제 그만.",
+    "heroSubtitle": "2분 이내에 완벽한 바순 리드 감기. €349(부가세 포함)부터.",
+    "orderNow": "지금 주문하기",
+    "priceDisplay": "€349(부가세 포함)",
+    "videoPlaceholder": "제품 영상",
+    "problemTitle": "이런 경험 있으시죠",
+    "problemText": "리드 하나에 5~10분. 아픈 손가락. 그래도 균일하지 않은 결과. 터번 감기는 리드 제작에서 가장 시간이 많이 걸리고 좌절감을 주는 단계 중 하나입니다.",
+    "problemTime": "리드당 5~10분",
+    "problemStrain": "손가락 피로",
+    "problemInconsistent": "일관성 없는 결과",
+    "featuresTitle": "와인딩 머신의 특징",
+    "feature1Title": "2분 이내",
+    "feature1Desc": "완전한 터번 패턴 — 단순한 회전이 아닌 진정한 패턴 가이드",
+    "feature2Title": "알루미늄 정밀도",
+    "feature2Desc": "맨드렐 척, 클램프, 크랭크 모두 고품질 알루미늄",
+    "feature3Title": "좌우 양손잡이 대응",
+    "feature3Desc": "쉽게 전환 가능",
+    "feature4Title": "바순 & 콘트라바순",
+    "feature4Desc": "두 가지 맨드렐 사이즈 포함",
+    "feature5Title": "컴팩트 설계",
+    "feature5Desc": "최소한의 설정으로 바로 사용 가능",
+    "personalizationTitle": "당신의 머신. 당신의 이름.",
+    "personalizationText": "모든 와인딩 머신은 요청 시 개인화 가능: 이름이나 이니셜을 머신에 인쇄. 하우징 색상도 선택 가능.",
+    "personalizationInstitutional": "기관 주문 환영 — 대학 로고, 오케스트라 브랜딩, 졸업 기념품.",
+    "personalizationNote": "이메일로 문의해 주세요.",
+    "orderTitle": "주문 방법",
+    "orderStep1": "이메일 보내기",
+    "orderStep1Desc": "info@hippermachines.com으로 간단한 이메일을",
+    "orderStep2": "답장해 드립니다",
+    "orderStep2Desc": "주문을 확인하고 결제 세부사항을 보내드립니다",
+    "orderStep3": "제작합니다",
+    "orderStep3Desc": "머신을 수작업으로 제작하여 배송합니다",
+    "orderStep4": "감기",
+    "orderStep4Desc": "매번 완벽한 결과",
+    "orderCta": "이메일로 주문하기",
     "viewProducts": "제품 둘러보기",
     "contactUs": "문의하기",
     "categoriesTitle": "제품 카테고리",
@@ -97,6 +130,7 @@
     "workshopImageAlt": "공방 사진"
   },
   "products": {
+    "newBadge": "신제품",
     "bassoonPageSubtitle": "전문 바순 리드 제작을 위한 고품질 기계와 도구를 만나보세요.",
     "oboePageSubtitle": "전문 오보에 리드 제작을 위한 특수 기계를 만나보세요.",
     "bassoon": {

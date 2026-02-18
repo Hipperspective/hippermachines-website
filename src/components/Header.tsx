@@ -11,7 +11,6 @@ export default function Header() {
   const t = useTranslations('navigation');
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -68,42 +67,9 @@ export default function Header() {
               {t('about')}
             </Link>
 
-            {/* Products Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
-                onBlur={() => setTimeout(() => setIsProductsDropdownOpen(false), 150)}
-                className={`${navLinkClass('/products')} flex items-center gap-1`}
-              >
-                {t('products')}
-                <svg
-                  className={`w-4 h-4 transition-transform ${
-                    isProductsDropdownOpen ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              {isProductsDropdownOpen && (
-                <div className="absolute top-full left-0 mt-1 w-40 bg-white dark:bg-[#252220] rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 py-1">
-                  <Link
-                    href="/products/bassoon"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary-600 dark:hover:text-primary-400 font-body"
-                  >
-                    {t('bassoon')}
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link href="/products/bassoon" className={navLinkClass('/products')}>
+              {t('products')}
+            </Link>
 
             <Link href="/contact" className={navLinkClass('/contact')}>
               {t('contact')}
@@ -159,18 +125,13 @@ export default function Header() {
           >
             {t('about')}
           </Link>
-          <div className="py-2">
-            <span className="block px-3 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 font-body">
-              {t('products')}
-            </span>
-            <Link
-              href="/products/bassoon"
-              className="block pl-8 py-3 min-h-[44px] flex items-center text-base text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-body"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t('bassoon')}
-            </Link>
-          </div>
+          <Link
+            href="/products/bassoon"
+            className="block px-3 py-3 min-h-[44px] flex items-center rounded-md text-base font-body font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            {t('products')}
+          </Link>
           <Link
             href="/contact"
             className="block px-3 py-3 min-h-[44px] flex items-center rounded-md text-base font-body font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"

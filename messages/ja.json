@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Hipper Machines - リード製作のための精密機械",
-    "description": "木管楽器リード製作の専門機械メーカー。ファゴットとオーボエのリード製作用高品質機械。"
+    "title": "Hippermachines — ファゴット用ワインディングマシン | 初の手頃な価格のリードワインディングマシン",
+    "description": "Hippermachinesワインディングマシン：2分以内で精密なファゴットリード巻き。€349（税込）。ドイツ・バイエルン州で手作り。"
   },
   "navigation": {
     "home": "ホーム",
@@ -34,8 +34,41 @@
     "priceOnRequest": "価格はお問い合わせください"
   },
   "home": {
-    "heroTitle": "プロフェッショナルなリード製作のための精密機械",
-    "heroSubtitle": "ファゴットとオーボエのための高品質専門機械 – 音楽家が音楽家のために開発",
+    "heroTitle": "手巻きはもう終わり。",
+    "heroSubtitle": "2分以内で完璧なファゴットリード巻き。€349（税込）から。",
+    "orderNow": "今すぐ注文",
+    "priceDisplay": "€349（税込）",
+    "videoPlaceholder": "製品ビデオ",
+    "problemTitle": "こんな経験ありませんか",
+    "problemText": "1本あたり5〜10分。指の痛み。それでも均一にならない。ターバン巻きはリード作りで最も時間がかかり、最もストレスの多い工程の一つです。",
+    "problemTime": "1本あたり5〜10分",
+    "problemStrain": "指への負担",
+    "problemInconsistent": "不均一な仕上がり",
+    "featuresTitle": "ワインディングマシンの特長",
+    "feature1Title": "2分以内",
+    "feature1Desc": "完全なターバンパターン — 単なる回転ではなく、本物のパターンガイド",
+    "feature2Title": "アルミニウム精度",
+    "feature2Desc": "マンドレルチャック、クランプ、クランクは高品質アルミニウム製",
+    "feature3Title": "左右両利き対応",
+    "feature3Desc": "簡単に切り替え可能",
+    "feature4Title": "ファゴット＆コントラファゴット",
+    "feature4Desc": "両方のマンドレルサイズ付属",
+    "feature5Title": "コンパクト設計",
+    "feature5Desc": "最小限のセットアップですぐに使用可能",
+    "personalizationTitle": "あなたのマシン。あなたの名前。",
+    "personalizationText": "すべてのワインディングマシンはご要望に応じてパーソナライズ可能：お名前やイニシャルをマシンに印刷。ハウジングカラーも選択可能。",
+    "personalizationInstitutional": "法人注文歓迎 — 大学ロゴ、オーケストラブランディング、卒業記念品。",
+    "personalizationNote": "メールでお問い合わせください。",
+    "orderTitle": "ご注文方法",
+    "orderStep1": "メールを送る",
+    "orderStep1Desc": "info@hippermachines.comへ簡単なメールを",
+    "orderStep2": "返信します",
+    "orderStep2Desc": "ご注文を確認し、お支払い詳細をお送りします",
+    "orderStep3": "製作します",
+    "orderStep3Desc": "マシンを手作りし、発送します",
+    "orderStep4": "巻く",
+    "orderStep4Desc": "毎回完璧な仕上がり",
+    "orderCta": "メールで注文する",
     "viewProducts": "製品を探す",
     "contactUs": "お問い合わせ",
     "categoriesTitle": "製品カテゴリー",
@@ -97,6 +130,7 @@
     "workshopImageAlt": "工房の写真"
   },
   "products": {
+    "newBadge": "新製品",
     "bassoonPageSubtitle": "プロフェッショナルなファゴットリード製作のための高品質な機械とツールをご覧ください。",
     "oboePageSubtitle": "プロフェッショナルなオーボエリード製作のための専門機械をご覧ください。",
     "bassoon": {

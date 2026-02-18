@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Hipper Machines - Präzisionsmaschinen für Rohrbau",
-    "description": "Revolutionäre Maschinen für den Rohrbau. Sparen Sie Zeit, steigern Sie die Qualität Ihrer Rohre. Handgefertigt in Deutschland von einem Fagottisten für Musiker weltweit."
+    "title": "Hippermachines — Wickelmaschine für Fagott | Die erste leistbare Rohrwickelmaschine",
+    "description": "Die Hippermachines Wickelmaschine: Präzise Fagott-Rohrwicklung in unter 2 Minuten. €349 inkl. MwSt. Handgefertigt in Bayern."
   },
   "navigation": {
     "home": "Startseite",
@@ -34,10 +34,44 @@
     "priceOnRequest": "Preis auf Anfrage"
   },
   "home": {
-    "heroTitle": "Mehr Zeit für Musik. Weniger Zeit am Schabetisch.",
-    "heroSubtitle": "Unsere Präzisionsmaschinen revolutionieren Ihren Rohrbau: Schneller, präziser und mit Ergebnissen, die Sie begeistern werden. Entwickelt von einem Fagottisten, der Ihre Herausforderungen kennt.",
+    "heroTitle": "Die erste leistbare Wickelmaschine.",
+    "heroSubtitle": "Perfekte Fagott-Rohrwicklung in unter 2 Minuten. Ab €349 inkl. MwSt.",
+    "orderNow": "Jetzt bestellen",
+    "learnMore": "Mehr erfahren",
+    "priceDisplay": "€349 inkl. MwSt.",
+    "videoPlaceholder": "Produktvideo",
     "viewProducts": "Maschinen entdecken",
     "contactUs": "Persönliche Beratung",
+    "problemTitle": "Das kennen Sie",
+    "problemText": "5–10 Minuten pro Rohr. Schmerzende Finger. Und trotzdem nie ganz gleichmäßig. Das Wickeln des Türkenbunds ist einer der zeitaufwändigsten Schritte im Rohrbau – und einer der frustrierendsten.",
+    "problemTime": "5–10 Min. pro Rohr",
+    "problemStrain": "Belastung der Finger",
+    "problemInconsistent": "Ungleichmäßige Ergebnisse",
+    "featuresTitle": "Was die Wickelmaschine besonders macht",
+    "feature1Title": "Unter 2 Minuten",
+    "feature1Desc": "Vollständiges Türkenbund-Muster – nicht nur Rotation, sondern echte Musterführung",
+    "feature2Title": "Aluminium-Präzision",
+    "feature2Desc": "Dornfutter, Klemme und Kurbel aus hochwertigem Aluminium",
+    "feature3Title": "Links- & Rechtshänder",
+    "feature3Desc": "Einfach umstellbar für beide Händigkeiten",
+    "feature4Title": "Fagott & Kontrafagott",
+    "feature4Desc": "Beide Dorngrößen sind im Lieferumfang enthalten",
+    "feature5Title": "Kompaktes Design",
+    "feature5Desc": "Minimaler Aufbau, sofort einsatzbereit",
+    "personalizationTitle": "Deine Maschine. Dein Name.",
+    "personalizationText": "Jede Wickelmaschine kann auf Wunsch personalisiert werden: Ihr Name oder Ihre Initialen werden auf die Maschine gedruckt. Auch die Farbe des Gehäuses ist wählbar.",
+    "personalizationInstitutional": "Institutionelle Bestellungen willkommen – Universitäts-Logos, Orchester-Branding, Geschenke für Absolventen.",
+    "personalizationNote": "Sprechen Sie uns einfach an. Per Email.",
+    "orderTitle": "So bestellst du",
+    "orderStep1": "Schreib uns",
+    "orderStep1Desc": "Eine kurze Email an info@hippermachines.com genügt",
+    "orderStep2": "Wir melden uns",
+    "orderStep2Desc": "Bestätigen deine Bestellung und senden die Zahlungsdetails",
+    "orderStep3": "Wir bauen",
+    "orderStep3Desc": "Deine Maschine wird handgefertigt und versandt",
+    "orderStep4": "Du wickelst",
+    "orderStep4Desc": "Perfekte Ergebnisse, jedes Mal",
+    "orderCta": "Jetzt per Email bestellen",
     "categoriesTitle": "Unsere Maschinen",
     "categoriesSubtitle": "Jede Maschine ist das Ergebnis jahrelanger Entwicklung und dem Feedback von Profi-Musikern weltweit",
     "bassoonDescription": "Hochpräzise Hobelautomaten, die Ihren Rohrbau auf ein neues Level heben",
@@ -97,6 +131,7 @@
     "workshopImageAlt": "Werkstatt Bild"
   },
   "products": {
+    "newBadge": "NEU",
     "bassoonPageSubtitle": "Präzisionsmaschinen, die Ihren Fagott-Rohrbau effizienter und präziser machen.",
     "oboePageSubtitle": "Spezialisierte Maschinen für professionellen Oboe-Rohrbau.",
     "bassoon": {
