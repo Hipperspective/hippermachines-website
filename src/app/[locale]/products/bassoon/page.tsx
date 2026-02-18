@@ -26,7 +26,7 @@ export default function BassoonProductsPage() {
       {/* Products Grid */}
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {bassoonProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

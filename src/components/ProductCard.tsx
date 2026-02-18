@@ -52,10 +52,10 @@ export default function ProductCard({ product }: ProductCardProps) {
   const displayImage = isDarkMode ? darkImage : lightImage;
 
   return (
-    <Link href={detailUrl} className="block group">
-      <div className="bg-white dark:bg-[#252220] rounded-xl shadow-md dark:shadow-[0_0_0_1px_rgba(255,255,255,0.05)] overflow-hidden hover:shadow-xl dark:hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 transition-all duration-500">
+    <Link href={detailUrl} className="block group h-full">
+      <div className="h-full flex flex-col bg-white dark:bg-[#252220] rounded-xl shadow-md dark:shadow-[0_0_0_1px_rgba(255,255,255,0.05)] overflow-hidden hover:shadow-xl dark:hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 transition-all duration-500">
         {/* Product Image */}
-        <div className="relative h-48 bg-gray-100 dark:bg-[#2A2725]">
+        <div className="relative h-48 bg-gray-100 dark:bg-[#2A2725] flex-shrink-0">
           {displayImage ? (
             <Image
               src={displayImage}
@@ -84,22 +84,24 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Product Info */}
-        <div className="p-6">
-          <h3 className="font-heading text-lg font-medium text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="font-heading text-lg font-medium text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300 line-clamp-2 min-h-[3.5rem]">
             {productName}
           </h3>
-          <p className="font-body text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+          <p className="font-body text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 min-h-[2.5rem]">
             {shortDesc}
           </p>
-          {product.priceBrutto > 0 ? (
-            <p className="font-body text-sm text-gray-500 dark:text-gray-500">
-              {tCommon('priceFrom')} {product.priceBrutto.toLocaleString('de-DE')} €
-            </p>
-          ) : (
-            <p className="font-body text-sm text-gray-500 dark:text-gray-500">
-              {tCommon('priceOnRequest')}
-            </p>
-          )}
+          <div className="mt-auto">
+            {product.priceBrutto > 0 ? (
+              <p className="font-body text-sm text-gray-500 dark:text-gray-500">
+                {tCommon('priceFrom')} {product.priceBrutto.toLocaleString('de-DE')} €
+              </p>
+            ) : (
+              <p className="font-body text-sm text-gray-500 dark:text-gray-500">
+                {tCommon('priceOnRequest')}
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </Link>
