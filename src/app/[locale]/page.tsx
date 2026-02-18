@@ -3,9 +3,33 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function HomePage() {
   const t = useTranslations('home');
+
+  // Hero carousel state
+  const heroImages = [
+    '/images/products/wickelmaschine-1.jpg',
+    '/images/products/wickelmaschine-2.jpg',
+    '/images/products/wickelmaschine-3.jpg',
+    '/images/products/wickelmaschine-4.jpg',
+  ];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = useCallback(() => {
+    setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+  }, [heroImages.length]);
+
+  const prevImage = useCallback(() => {
+    setCurrentImageIndex((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  }, [heroImages.length]);
+
+  // Auto-advance carousel
+  useEffect(() => {
+    const interval = setInterval(nextImage, 5000);
+    return () => clearInterval(interval);
+  }, [nextImage]);
 
   const windingFeatures = [
     { key: 'speed', icon: ClockIcon },
@@ -135,26 +159,56 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Video/Image Placeholder */}
+            {/* Image Carousel */}
             <div className="relative">
-              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-gray-900">
-                <Image
-                  src="/images/products/wickelmaschine-1.jpg"
-                  alt="Wickelmaschine - Bassoon Reed Winding Machine"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Play button overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors cursor-pointer group">
-                  <div className="w-20 h-20 rounded-full bg-white/90 dark:bg-white/80 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
-                    <svg className="w-8 h-8 text-primary-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <span className="absolute bottom-4 left-4 text-white font-body text-sm bg-black/50 px-3 py-1 rounded-full">
-                    {t('hero.videoLabel')}
-                  </span>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-gray-900">
+                {heroImages.map((src, index) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt={`Wickelmaschine - Bassoon Reed Winding Machine ${index + 1}`}
+                    fill
+                    className={`object-cover transition-opacity duration-500 ${
+                      index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                    priority={index === 0}
+                  />
+                ))}
+
+                {/* Navigation arrows */}
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-black/50 flex items-center justify-center hover:bg-white dark:hover:bg-black/70 transition-colors shadow-lg"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-5 h-5 text-gray-800 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-black/50 flex items-center justify-center hover:bg-white dark:hover:bg-black/70 transition-colors shadow-lg"
+                  aria-label="Next image"
+                >
+                  <svg className="w-5 h-5 text-gray-800 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+
+                {/* Dots indicator */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                  {heroImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-2.5 h-2.5 rounded-full transition-all ${
+                        index === currentImageIndex
+                          ? 'bg-white w-8'
+                          : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
                 </div>
               </div>
               {/* Floating accent */}
