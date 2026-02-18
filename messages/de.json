@@ -34,85 +34,113 @@
     "priceOnRequest": "Preis auf Anfrage"
   },
   "home": {
-    "heroTitle": "Die erste leistbare Wickelmaschine.",
-    "heroSubtitle": "Perfekte Fagott-Rohrwicklung in unter 2 Minuten. Ab €349 inkl. MwSt.",
-    "orderNow": "Jetzt bestellen",
-    "learnMore": "Mehr erfahren",
-    "priceDisplay": "€349 inkl. MwSt.",
-    "videoPlaceholder": "Produktvideo",
-    "viewProducts": "Maschinen entdecken",
-    "contactUs": "Persönliche Beratung",
-    "problemTitle": "Das kennen Sie",
-    "problemText": "5–10 Minuten pro Rohr. Schmerzende Finger. Und trotzdem nie ganz gleichmäßig. Das Wickeln des Türkenbunds ist einer der zeitaufwändigsten Schritte im Rohrbau – und einer der frustrierendsten.",
-    "problemTime": "5–10 Min. pro Rohr",
-    "problemStrain": "Belastung der Finger",
-    "problemInconsistent": "Ungleichmäßige Ergebnisse",
-    "featuresTitle": "Was die Wickelmaschine besonders macht",
-    "feature1Title": "Unter 2 Minuten",
-    "feature1Desc": "Vollständiges Türkenbund-Muster – nicht nur Rotation, sondern echte Musterführung",
-    "feature2Title": "Aluminium-Präzision",
-    "feature2Desc": "Dornfutter, Klemme und Kurbel aus hochwertigem Aluminium",
-    "feature3Title": "Links- & Rechtshänder",
-    "feature3Desc": "Einfach umstellbar für beide Händigkeiten",
-    "feature4Title": "Fagott & Kontrafagott",
-    "feature4Desc": "Beide Dorngrößen sind im Lieferumfang enthalten",
-    "feature5Title": "Kompaktes Design",
-    "feature5Desc": "Minimaler Aufbau, sofort einsatzbereit",
-    "personalizationTitle": "Deine Maschine. Dein Name.",
-    "personalizationText": "Jede Wickelmaschine kann auf Wunsch personalisiert werden: Ihr Name oder Ihre Initialen werden auf die Maschine gedruckt. Auch die Farbe des Gehäuses ist wählbar.",
-    "personalizationInstitutional": "Institutionelle Bestellungen willkommen – Universitäts-Logos, Orchester-Branding, Geschenke für Absolventen.",
-    "personalizationNote": "Sprechen Sie uns einfach an. Per Email.",
-    "orderTitle": "So bestellst du",
-    "orderStep1": "Schreib uns",
-    "orderStep1Desc": "Eine kurze Email an info@hippermachines.com genügt",
-    "orderStep2": "Wir melden uns",
-    "orderStep2Desc": "Bestätigen deine Bestellung und senden die Zahlungsdetails",
-    "orderStep3": "Wir bauen",
-    "orderStep3Desc": "Deine Maschine wird handgefertigt und versandt",
-    "orderStep4": "Du wickelst",
-    "orderStep4Desc": "Perfekte Ergebnisse, jedes Mal",
-    "orderCta": "Jetzt per Email bestellen",
-    "categoriesTitle": "Unsere Maschinen",
-    "categoriesSubtitle": "Jede Maschine ist das Ergebnis jahrelanger Entwicklung und dem Feedback von Profi-Musikern weltweit",
-    "bassoonDescription": "Hochpräzise Hobelautomaten, die Ihren Rohrbau auf ein neues Level heben",
-    "oboeDescription": "Präzisions-Hobelmaschinen für Oboe, Englischhorn und Wiener Oboe",
-    "ctaTitle": "Bereit, Ihren Rohrbau zu revolutionieren?",
-    "ctaSubtitle": "Lassen Sie uns gemeinsam herausfinden, welche Maschine am besten zu Ihren Anforderungen passt",
-    "ctaButton": "Kostenlose Beratung",
-    "featured": {
-      "badge": "Meistverkauft",
-      "title": "Aussenhobelautomat für Fagott",
-      "description": "Die Maschine, die alles verändert: Fräsen Sie die komplette Bahn in einem einzigen Durchgang – ohne Wenden, ohne Unterbrechung. Was früher mühsame Handarbeit war, erledigen Sie jetzt in Minuten.",
-      "feature1": "Kein Einweichen nötig – arbeitet mit trockenem Holz",
-      "feature2": "Hartmetall-Fräser hält für tausende Rohre",
-      "feature3": "Vollmotorisiert – ideal für größere Stückzahlen",
-      "learnMore": "Details ansehen",
-      "sendInquiry": "Jetzt anfragen"
+    "hero": {
+      "title": "Die erste leistbare Wickelmaschine.",
+      "subtitle": "Perfekte Fagott-Rohrwicklung in unter 2 Minuten.",
+      "priceFrom": "Ab 349 EUR inkl. MwSt.",
+      "orderNow": "Jetzt bestellen",
+      "learnMore": "Mehr erfahren",
+      "videoLabel": "Produktvideo"
     },
     "trust": {
       "handmade": "Handgefertigt in Bayern",
       "worldwide": "Weltweiter Versand",
-      "byMusicians": "Von Musikern für Musiker",
-      "madeInGermany": "Made in Germany"
+      "byMusicians": "Von Musikern für Musiker"
     },
-    "usps": {
-      "title": "Was unsere Maschinen besonders macht",
-      "noDrying": {
-        "title": "Kein Einweichen",
-        "description": "Arbeiten Sie direkt mit trockenem Holz – keine Wartezeit, kein Aufwand"
+    "problem": {
+      "title": "Das kennen Sie",
+      "time": {
+        "title": "Zeitaufwändig",
+        "description": "5–10 Minuten pro Rohr, nur für das Wickeln des Türkenbunds. Das summiert sich zu Stunden pro Woche."
       },
-      "carbide": {
-        "title": "Extrem langlebig",
-        "description": "Hartmetall-Fräser bleiben scharf für tausende von Rohren"
-      },
-      "playable": {
-        "title": "Sofort spielbar",
-        "description": "Ihre Rohre sind schneller einsatzbereit – weniger Einspielzeit"
-      },
-      "adaptable": {
-        "title": "Universell einsetzbar",
-        "description": "Für Fagott, Kontrafagott und alle Doppelrohrblatt-Instrumente"
+      "strain": {
+        "title": "Belastung & Ungleichmäßigkeit",
+        "description": "Schmerzende Finger, ungleichmäßige Spannung und unregelmäßige Muster. Jedes Rohr ist ein Kampf."
       }
+    },
+    "features": {
+      "title": "Was die Wickelmaschine besonders macht",
+      "subtitle": "Entwickelt von einem Fagottisten, für Fagottisten. Jedes Detail zählt.",
+      "speed": {
+        "title": "Unter 2 Minuten",
+        "description": "Vollständiges Türkenbund-Muster mit gleichmäßiger Spannung und sauberem Ergebnis."
+      },
+      "aluminum": {
+        "title": "Aluminium-Präzision",
+        "description": "Alle Kontaktflächen aus hochwertigem Aluminium für Langlebigkeit."
+      },
+      "ambidextrous": {
+        "title": "Links- & Rechtshänder",
+        "description": "Einfach umstellbar für beide Händigkeiten."
+      },
+      "mandrels": {
+        "title": "Fagott & Kontrafagott",
+        "description": "Beide Dorngrößen im Lieferumfang enthalten."
+      },
+      "compact": {
+        "title": "Kompaktes Design",
+        "description": "Minimaler Platzbedarf, sofort einsatzbereit. Kein komplizierter Aufbau."
+      },
+      "tension": {
+        "title": "Gleichmäßige Spannung",
+        "description": "Konstante Fadenspannung durchgehend. Keine losen Stellen oder Überspannung mehr."
+      }
+    },
+    "personalization": {
+      "badge": "Premium-Option",
+      "title": "Deine Maschine. Dein Name.",
+      "description": "Jede Wickelmaschine kann auf Wunsch personalisiert werden. Machen Sie sie zu Ihrer eigenen.",
+      "feature1": "Ihr Name oder Ihre Initialen auf der Maschine gedruckt",
+      "feature2": "Gehäusefarbe auf Wunsch wählbar",
+      "feature3": "Institutionelle Bestellungen willkommen: Universitäts-Logos, Orchester-Branding, Geschenke für Absolventen"
+    },
+    "howToOrder": {
+      "title": "So bestellst du",
+      "subtitle": "Kein Online-Shop, kein Checkout. Einfach ein persönlicher Email-Austausch.",
+      "steps": {
+        "email": {
+          "title": "Schreib uns",
+          "description": "Eine Email an info@hippermachines.com mit deiner Bestellung"
+        },
+        "confirm": {
+          "title": "Wir bestätigen",
+          "description": "Wir bestätigen die Details und senden die Zahlungsinformationen"
+        },
+        "build": {
+          "title": "Wir bauen",
+          "description": "Deine Maschine wird handgefertigt und versandt"
+        },
+        "wind": {
+          "title": "Du wickelst",
+          "description": "Perfekte Ergebnisse, jedes Mal"
+        }
+      },
+      "cta": "Jetzt per Email bestellen"
+    },
+    "machines": {
+      "title": "Unsere Maschinen",
+      "subtitle": "Präzisionswerkzeuge für professionellen Rohrbau",
+      "newBadge": "NEU",
+      "priceFrom": "ab",
+      "viewAll": "Alle Produkte ansehen",
+      "windingMachine": {
+        "name": "Wickelmaschine",
+        "desc": "Perfekte Türkenbund-Wicklung in unter 2 Minuten. Gleichmäßige Spannung, sauberes Muster."
+      },
+      "outerPlaner": {
+        "name": "Aussenhobelautomat",
+        "desc": "Bahn in einem Durchgang fräsen. Kein Einweichen nötig. Hartmetall-Fräser."
+      },
+      "innerPlaner": {
+        "name": "Innenhobelautomat",
+        "desc": "Präzises Innenfräsen mit oder ohne Mittenabsenkung. Arbeitet mit trockenem Holz."
+      }
+    },
+    "finalCta": {
+      "title": "Bereit, Stunden pro Woche zu sparen?",
+      "subtitle": "Bestelle deine Wickelmaschine noch heute. Handgefertigt in Bayern, weltweiter Versand.",
+      "orderButton": "Per Email bestellen",
+      "contactButton": "Frage stellen"
     }
   },
   "about": {

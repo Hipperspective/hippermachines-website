@@ -34,84 +34,113 @@
     "priceOnRequest": "価格はお問い合わせください"
   },
   "home": {
-    "heroTitle": "手巻きはもう終わり。",
-    "heroSubtitle": "2分以内で完璧なファゴットリード巻き。€349（税込）から。",
-    "orderNow": "今すぐ注文",
-    "priceDisplay": "€349（税込）",
-    "videoPlaceholder": "製品ビデオ",
-    "problemTitle": "こんな経験ありませんか",
-    "problemText": "1本あたり5〜10分。指の痛み。それでも均一にならない。ターバン巻きはリード作りで最も時間がかかり、最もストレスの多い工程の一つです。",
-    "problemTime": "1本あたり5〜10分",
-    "problemStrain": "指への負担",
-    "problemInconsistent": "不均一な仕上がり",
-    "featuresTitle": "ワインディングマシンの特長",
-    "feature1Title": "2分以内",
-    "feature1Desc": "完全なターバンパターン — 単なる回転ではなく、本物のパターンガイド",
-    "feature2Title": "アルミニウム精度",
-    "feature2Desc": "マンドレルチャック、クランプ、クランクは高品質アルミニウム製",
-    "feature3Title": "左右両利き対応",
-    "feature3Desc": "簡単に切り替え可能",
-    "feature4Title": "ファゴット＆コントラファゴット",
-    "feature4Desc": "両方のマンドレルサイズ付属",
-    "feature5Title": "コンパクト設計",
-    "feature5Desc": "最小限のセットアップですぐに使用可能",
-    "personalizationTitle": "あなたのマシン。あなたの名前。",
-    "personalizationText": "すべてのワインディングマシンはご要望に応じてパーソナライズ可能：お名前やイニシャルをマシンに印刷。ハウジングカラーも選択可能。",
-    "personalizationInstitutional": "法人注文歓迎 — 大学ロゴ、オーケストラブランディング、卒業記念品。",
-    "personalizationNote": "メールでお問い合わせください。",
-    "orderTitle": "ご注文方法",
-    "orderStep1": "メールを送る",
-    "orderStep1Desc": "info@hippermachines.comへ簡単なメールを",
-    "orderStep2": "返信します",
-    "orderStep2Desc": "ご注文を確認し、お支払い詳細をお送りします",
-    "orderStep3": "製作します",
-    "orderStep3Desc": "マシンを手作りし、発送します",
-    "orderStep4": "巻く",
-    "orderStep4Desc": "毎回完璧な仕上がり",
-    "orderCta": "メールで注文する",
-    "viewProducts": "製品を探す",
-    "contactUs": "お問い合わせ",
-    "categoriesTitle": "製品カテゴリー",
-    "categoriesSubtitle": "ファゴットとオーボエのための専門機械をご覧ください",
-    "bassoonDescription": "プロフェッショナルなファゴットリード製作のためのユニークなチップ成形機とガウジングマシン",
-    "oboeDescription": "オーボエ、コーラングレ、ウィーン式オーボエのための精密ガウジングマシン",
-    "ctaTitle": "製品にご興味がありますか？",
-    "ctaSubtitle": "個別のご相談はお気軽にお問い合わせください",
-    "ctaButton": "今すぐ問い合わせる",
-    "featured": {
-      "badge": "フラッグシップ製品",
-      "title": "プロファイリングマシン ファゴット",
-      "description": "革新的な設計により、一度のセットアップで加工が可能 – ケーンを裏返す必要がなく、連続的に加工できます。",
-      "feature1": "浸水不要 – 乾燥したケーンで作業可能",
-      "feature2": "超硬合金カッターで長寿命",
-      "feature3": "量産用完全電動化",
+    "hero": {
+      "title": "初の手頃な価格のワインディングマシン。",
+      "subtitle": "2分以内で完璧なファゴットリード巻き。",
+      "priceFrom": "349 EUR（税込）から",
+      "orderNow": "今すぐ注文",
       "learnMore": "詳細を見る",
-      "sendInquiry": "お問い合わせ"
+      "videoLabel": "製品ビデオ"
     },
     "trust": {
-      "handmade": "手作り",
+      "handmade": "バイエルンで手作り",
       "worldwide": "世界中に発送",
-      "byMusicians": "音楽家が音楽家のために",
-      "madeInGermany": "ドイツ製"
+      "byMusicians": "音楽家が音楽家のために"
     },
-    "usps": {
-      "title": "なぜHipper Machinesなのか？",
-      "noDrying": {
-        "title": "浸水不要",
-        "description": "当社の機械は乾燥したケーンで作業できます"
+    "problem": {
+      "title": "手巻きの問題点",
+      "time": {
+        "title": "時間がかかる",
+        "description": "ターバン巻きだけで1本あたり5〜10分。毎週何時間もかかります。"
       },
-      "carbide": {
-        "title": "超硬合金カッター",
-        "description": "非常に多くのリードに対応できる長寿命の切れ味"
-      },
-      "playable": {
-        "title": "すぐに演奏可能なリード",
-        "description": "長い慣らし期間が不要"
-      },
-      "adaptable": {
-        "title": "多目的に使用可能",
-        "description": "すべてのダブルリード楽器に適応可能"
+      "strain": {
+        "title": "負担と不均一さ",
+        "description": "指の痛み、不均一な張力、ムラのあるパターン。毎回苦労の連続です。"
       }
+    },
+    "features": {
+      "title": "ワインディングマシンの特長",
+      "subtitle": "ファゴット奏者が、ファゴット奏者のために設計。すべてのディテールにこだわりました。",
+      "speed": {
+        "title": "2分以内",
+        "description": "均一な張力ときれいな仕上がりの完全なターバンパターン。"
+      },
+      "aluminum": {
+        "title": "アルミニウム精度",
+        "description": "すべての接触面は耐久性のある高品質アルミニウム製。"
+      },
+      "ambidextrous": {
+        "title": "左右両利き対応",
+        "description": "左利き・右利きどちらにも簡単に切り替え可能。"
+      },
+      "mandrels": {
+        "title": "ファゴット＆コントラファゴット",
+        "description": "両方のマンドレルサイズが標準で付属。"
+      },
+      "compact": {
+        "title": "コンパクト設計",
+        "description": "省スペース、すぐに使用可能。複雑なセットアップ不要。"
+      },
+      "tension": {
+        "title": "均一な張力",
+        "description": "全体を通して一定の糸張力。緩みや締めすぎがなくなります。"
+      }
+    },
+    "personalization": {
+      "badge": "プレミアムオプション",
+      "title": "あなたのマシン。あなたの名前。",
+      "description": "すべてのワインディングマシンはご要望に応じてパーソナライズ可能。あなただけのマシンに。",
+      "feature1": "お名前やイニシャルをマシンに印刷",
+      "feature2": "ハウジングカラーをお好みで選択可能",
+      "feature3": "法人注文歓迎：大学ロゴ、オーケストラブランディング、卒業記念品"
+    },
+    "howToOrder": {
+      "title": "ご注文方法",
+      "subtitle": "オンラインショップなし、チェックアウトなし。シンプルなメールでのやり取りです。",
+      "steps": {
+        "email": {
+          "title": "メールを送る",
+          "description": "info@hippermachines.comにご注文内容をメール"
+        },
+        "confirm": {
+          "title": "確認のご連絡",
+          "description": "詳細を確認し、お支払い情報をお送りします"
+        },
+        "build": {
+          "title": "製作",
+          "description": "マシンを手作りし、発送します"
+        },
+        "wind": {
+          "title": "巻き始める",
+          "description": "毎回完璧な仕上がり"
+        }
+      },
+      "cta": "メールで注文する"
+    },
+    "machines": {
+      "title": "製品ラインナップ",
+      "subtitle": "プロフェッショナルなリード製作のための精密ツール",
+      "newBadge": "新製品",
+      "priceFrom": "",
+      "viewAll": "すべての製品を見る",
+      "windingMachine": {
+        "name": "ワインディングマシン",
+        "desc": "2分以内で完璧なターバン巻き。均一な張力、きれいなパターン。"
+      },
+      "outerPlaner": {
+        "name": "プロファイリングマシン",
+        "desc": "1回のパスでプロファイル加工。浸水不要。超硬合金カッター。"
+      },
+      "innerPlaner": {
+        "name": "ガウジングマシン",
+        "desc": "中央凹陷の有無を問わず精密なガウジング。乾燥ケーン対応。"
+      }
+    },
+    "finalCta": {
+      "title": "毎週何時間も節約する準備はできましたか？",
+      "subtitle": "今すぐワインディングマシンをご注文ください。バイエルンで手作り、世界中に発送。",
+      "orderButton": "メールで注文",
+      "contactButton": "質問する"
     }
   },
   "about": {

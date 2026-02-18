@@ -34,84 +34,113 @@
     "priceOnRequest": "가격 문의"
   },
   "home": {
-    "heroTitle": "손 감기는 이제 그만.",
-    "heroSubtitle": "2분 이내에 완벽한 바순 리드 감기. €349(부가세 포함)부터.",
-    "orderNow": "지금 주문하기",
-    "priceDisplay": "€349(부가세 포함)",
-    "videoPlaceholder": "제품 영상",
-    "problemTitle": "이런 경험 있으시죠",
-    "problemText": "리드 하나에 5~10분. 아픈 손가락. 그래도 균일하지 않은 결과. 터번 감기는 리드 제작에서 가장 시간이 많이 걸리고 좌절감을 주는 단계 중 하나입니다.",
-    "problemTime": "리드당 5~10분",
-    "problemStrain": "손가락 피로",
-    "problemInconsistent": "일관성 없는 결과",
-    "featuresTitle": "와인딩 머신의 특징",
-    "feature1Title": "2분 이내",
-    "feature1Desc": "완전한 터번 패턴 — 단순한 회전이 아닌 진정한 패턴 가이드",
-    "feature2Title": "알루미늄 정밀도",
-    "feature2Desc": "맨드렐 척, 클램프, 크랭크 모두 고품질 알루미늄",
-    "feature3Title": "좌우 양손잡이 대응",
-    "feature3Desc": "쉽게 전환 가능",
-    "feature4Title": "바순 & 콘트라바순",
-    "feature4Desc": "두 가지 맨드렐 사이즈 포함",
-    "feature5Title": "컴팩트 설계",
-    "feature5Desc": "최소한의 설정으로 바로 사용 가능",
-    "personalizationTitle": "당신의 머신. 당신의 이름.",
-    "personalizationText": "모든 와인딩 머신은 요청 시 개인화 가능: 이름이나 이니셜을 머신에 인쇄. 하우징 색상도 선택 가능.",
-    "personalizationInstitutional": "기관 주문 환영 — 대학 로고, 오케스트라 브랜딩, 졸업 기념품.",
-    "personalizationNote": "이메일로 문의해 주세요.",
-    "orderTitle": "주문 방법",
-    "orderStep1": "이메일 보내기",
-    "orderStep1Desc": "info@hippermachines.com으로 간단한 이메일을",
-    "orderStep2": "답장해 드립니다",
-    "orderStep2Desc": "주문을 확인하고 결제 세부사항을 보내드립니다",
-    "orderStep3": "제작합니다",
-    "orderStep3Desc": "머신을 수작업으로 제작하여 배송합니다",
-    "orderStep4": "감기",
-    "orderStep4Desc": "매번 완벽한 결과",
-    "orderCta": "이메일로 주문하기",
-    "viewProducts": "제품 둘러보기",
-    "contactUs": "문의하기",
-    "categoriesTitle": "제품 카테고리",
-    "categoriesSubtitle": "바순과 오보에를 위한 전문 기계를 만나보세요",
-    "bassoonDescription": "전문 바순 리드 제작을 위한 독특한 팁 프로파일링 머신과 가우징 머신",
-    "oboeDescription": "오보에, 잉글리시 호른, 비엔나 오보에를 위한 정밀 가우징 머신",
-    "ctaTitle": "제품에 관심이 있으신가요?",
-    "ctaSubtitle": "맞춤 상담을 위해 연락해 주세요",
-    "ctaButton": "지금 문의하기",
-    "featured": {
-      "badge": "플래그십 제품",
-      "title": "프로파일링 머신 바순",
-      "description": "혁신적인 설계로 한 번의 셋업으로 가공 가능 – 케인을 뒤집을 필요 없이 연속적으로 가공할 수 있습니다.",
-      "feature1": "불림 불필요 – 건조한 케인으로 작업 가능",
-      "feature2": "초경합금 커터로 긴 수명",
-      "feature3": "양산용 완전 자동화",
+    "hero": {
+      "title": "최초의 합리적인 가격의 와인딩 머신.",
+      "subtitle": "2분 이내에 완벽한 바순 리드 감기.",
+      "priceFrom": "349 EUR(부가세 포함)부터",
+      "orderNow": "지금 주문하기",
       "learnMore": "자세히 보기",
-      "sendInquiry": "문의하기"
+      "videoLabel": "제품 영상"
     },
     "trust": {
-      "handmade": "수작업 제작",
+      "handmade": "바이에른에서 수작업 제작",
       "worldwide": "전 세계 배송",
-      "byMusicians": "음악가가 음악가를 위해",
-      "madeInGermany": "독일산"
+      "byMusicians": "음악가가 음악가를 위해"
     },
-    "usps": {
-      "title": "왜 Hipper Machines인가?",
-      "noDrying": {
-        "title": "케인 불림 불필요",
-        "description": "당사 기계는 건조한 케인으로 작업합니다"
+    "problem": {
+      "title": "손 감기의 문제점",
+      "time": {
+        "title": "시간 소모",
+        "description": "터번 감기에만 리드당 5~10분. 매주 몇 시간씩 소요됩니다."
       },
-      "carbide": {
-        "title": "초경합금 커터",
-        "description": "오랫동안 날카로움을 유지하여 수많은 리드 제작 가능"
-      },
-      "playable": {
-        "title": "즉시 연주 가능한 리드",
-        "description": "더 이상 긴 길들이기 시간이 필요 없습니다"
-      },
-      "adaptable": {
-        "title": "다목적 사용 가능",
-        "description": "모든 더블 리드 악기에 적응 가능"
+      "strain": {
+        "title": "피로와 불균일함",
+        "description": "아픈 손가락, 불균일한 장력, 고르지 않은 패턴. 매번 고생입니다."
       }
+    },
+    "features": {
+      "title": "와인딩 머신의 특징",
+      "subtitle": "바수니스트가 바수니스트를 위해 설계. 모든 디테일이 중요합니다.",
+      "speed": {
+        "title": "2분 이내",
+        "description": "균일한 장력과 깔끔한 결과의 완전한 터번 패턴."
+      },
+      "aluminum": {
+        "title": "알루미늄 정밀도",
+        "description": "모든 접촉면은 내구성을 위해 고품질 알루미늄으로 제작."
+      },
+      "ambidextrous": {
+        "title": "좌우 양손잡이 대응",
+        "description": "왼손잡이와 오른손잡이 모두 쉽게 전환 가능."
+      },
+      "mandrels": {
+        "title": "바순 & 콘트라바순",
+        "description": "두 가지 맨드렐 사이즈가 기본 포함."
+      },
+      "compact": {
+        "title": "컴팩트 설계",
+        "description": "최소한의 공간, 바로 사용 가능. 복잡한 설정 불필요."
+      },
+      "tension": {
+        "title": "균일한 장력",
+        "description": "전체적으로 일정한 실 장력. 더 이상 느슨함이나 과도한 조임 없음."
+      }
+    },
+    "personalization": {
+      "badge": "프리미엄 옵션",
+      "title": "당신의 머신. 당신의 이름.",
+      "description": "모든 와인딩 머신은 요청 시 개인화 가능. 진정으로 당신만의 것으로.",
+      "feature1": "이름이나 이니셜을 머신에 인쇄",
+      "feature2": "하우징 필라멘트 색상 선택 가능",
+      "feature3": "기관 주문 환영: 대학 로고, 오케스트라 브랜딩, 졸업 기념품"
+    },
+    "howToOrder": {
+      "title": "주문 방법",
+      "subtitle": "온라인 쇼핑몰 없음, 결제 없음. 개인적인 이메일 교환만.",
+      "steps": {
+        "email": {
+          "title": "이메일 보내기",
+          "description": "info@hippermachines.com으로 주문 내용을 이메일"
+        },
+        "confirm": {
+          "title": "확인해 드립니다",
+          "description": "세부사항을 확인하고 결제 정보를 보내드립니다"
+        },
+        "build": {
+          "title": "제작합니다",
+          "description": "머신을 수작업으로 제작하여 배송합니다"
+        },
+        "wind": {
+          "title": "감기 시작",
+          "description": "매번 완벽한 결과"
+        }
+      },
+      "cta": "이메일로 주문하기"
+    },
+    "machines": {
+      "title": "제품 라인업",
+      "subtitle": "전문 리드 제작을 위한 정밀 도구",
+      "newBadge": "신제품",
+      "priceFrom": "",
+      "viewAll": "모든 제품 보기",
+      "windingMachine": {
+        "name": "와인딩 머신",
+        "desc": "2분 이내에 완벽한 터번 감기. 균일한 장력, 깔끔한 패턴."
+      },
+      "outerPlaner": {
+        "name": "프로파일링 머신",
+        "desc": "한 번에 프로파일 가공. 불림 불필요. 초경합금 커터."
+      },
+      "innerPlaner": {
+        "name": "가우징 머신",
+        "desc": "중앙 딥 유무에 관계없이 정밀한 가우징. 건조한 케인으로 작업."
+      }
+    },
+    "finalCta": {
+      "title": "매주 몇 시간을 절약할 준비가 되셨나요?",
+      "subtitle": "지금 와인딩 머신을 주문하세요. 바이에른에서 수작업 제작, 전 세계 배송.",
+      "orderButton": "이메일로 주문",
+      "contactButton": "질문하기"
     }
   },
   "about": {

@@ -34,84 +34,113 @@
     "priceOnRequest": "价格请咨询"
   },
   "home": {
-    "heroTitle": "告别手工绕线。",
-    "heroSubtitle": "2分钟内完美完成大管哨片绕线。€349（含增值税）起。",
-    "orderNow": "立即订购",
-    "priceDisplay": "€349（含增值税）",
-    "videoPlaceholder": "产品视频",
-    "problemTitle": "这些情况您是否熟悉",
-    "problemText": "每支哨片5-10分钟。手指疼痛。结果却不均匀。缠绕是哨片制作中最耗时、最令人沮丧的步骤之一。",
-    "problemTime": "每支哨片5-10分钟",
-    "problemStrain": "手指疲劳",
-    "problemInconsistent": "结果不一致",
-    "featuresTitle": "绕线机特点",
-    "feature1Title": "2分钟内完成",
-    "feature1Desc": "完整的缠绕图案 — 不仅仅是旋转，而是真正的图案引导",
-    "feature2Title": "铝制精密部件",
-    "feature2Desc": "心轴夹头、夹具、曲柄均采用高品质铝材",
-    "feature3Title": "左右手通用",
-    "feature3Desc": "轻松切换",
-    "feature4Title": "大管和低音大管",
-    "feature4Desc": "包含两种心轴尺寸",
-    "feature5Title": "紧凑设计",
-    "feature5Desc": "最少的设置即可开始使用",
-    "personalizationTitle": "您的机器。您的名字。",
-    "personalizationText": "所有绕线机均可按要求个性化定制：在机器上印上您的名字或首字母缩写。外壳颜色也可选择。",
-    "personalizationInstitutional": "欢迎机构订单 — 大学标志、乐团品牌、毕业礼品。",
-    "personalizationNote": "请发送电子邮件咨询。",
-    "orderTitle": "如何订购",
-    "orderStep1": "发送邮件",
-    "orderStep1Desc": "发送简单邮件至 info@hippermachines.com",
-    "orderStep2": "我们回复",
-    "orderStep2Desc": "确认您的订单并发送付款详情",
-    "orderStep3": "我们制作",
-    "orderStep3Desc": "手工制作机器并发货",
-    "orderStep4": "开始绕线",
-    "orderStep4Desc": "每次都完美",
-    "orderCta": "通过邮件订购",
-    "viewProducts": "探索产品",
-    "contactUs": "联系我们",
-    "categoriesTitle": "产品类别",
-    "categoriesSubtitle": "探索我们为大管和双簧管打造的专业机械",
-    "bassoonDescription": "专业大管簧片制作的独特尖端成型机和内刮机",
-    "oboeDescription": "双簧管、英国管和维也纳双簧管精密内刮机",
-    "ctaTitle": "对我们的产品感兴趣？",
-    "ctaSubtitle": "联系我们获取个性化咨询",
-    "ctaButton": "立即咨询",
-    "featured": {
-      "badge": "旗舰产品",
-      "title": "外刮机 大管",
-      "description": "创新设计允许一次装夹完成加工——无需翻转芦苇，可连续加工。",
-      "feature1": "无需浸泡——可加工干燥芦苇",
-      "feature2": "硬质合金刀头，使用寿命长",
-      "feature3": "全自动化，适合批量生产",
+    "hero": {
+      "title": "首款实惠的绕线机。",
+      "subtitle": "2分钟内完美完成大管哨片绕线。",
+      "priceFrom": "349 EUR（含增值税）起",
+      "orderNow": "立即订购",
       "learnMore": "了解更多",
-      "sendInquiry": "发送询价"
+      "videoLabel": "产品视频"
     },
     "trust": {
-      "handmade": "手工制作",
+      "handmade": "巴伐利亚手工制作",
       "worldwide": "全球配送",
-      "byMusicians": "由音乐家为音乐家打造",
-      "madeInGermany": "德国制造"
+      "byMusicians": "由音乐家为音乐家打造"
     },
-    "usps": {
-      "title": "为什么选择Hipper Machines？",
-      "noDrying": {
-        "title": "无需浸泡",
-        "description": "我们的机械可以处理干燥的芦苇"
+    "problem": {
+      "title": "手工绕线的问题",
+      "time": {
+        "title": "耗时",
+        "description": "光是缠绕就需要每支哨片5-10分钟。每周累计数小时。"
       },
-      "carbide": {
-        "title": "硬质合金刀头",
-        "description": "保持锋利，可加工大量簧片"
-      },
-      "playable": {
-        "title": "即刻可演奏的簧片",
-        "description": "不再需要漫长的磨合期"
-      },
-      "adaptable": {
-        "title": "多用途",
-        "description": "可适配所有双簧乐器"
+      "strain": {
+        "title": "疲劳与不均匀",
+        "description": "手指疼痛、张力不均、图案不规则。每次都是挣扎。"
       }
+    },
+    "features": {
+      "title": "绕线机的特点",
+      "subtitle": "由大管演奏家为大管演奏家设计。每个细节都很重要。",
+      "speed": {
+        "title": "2分钟内完成",
+        "description": "完整的缠绕图案，张力一致，结果干净。"
+      },
+      "aluminum": {
+        "title": "铝制精密部件",
+        "description": "所有接触面均采用高品质铝材，经久耐用。"
+      },
+      "ambidextrous": {
+        "title": "左右手通用",
+        "description": "轻松切换，适合左撇子和右撇子。"
+      },
+      "mandrels": {
+        "title": "大管和低音大管",
+        "description": "两种心轴尺寸标准配置。"
+      },
+      "compact": {
+        "title": "紧凑设计",
+        "description": "占地小，即开即用。无需复杂设置。"
+      },
+      "tension": {
+        "title": "张力一致",
+        "description": "全程均匀的线张力。不再有松动或过紧。"
+      }
+    },
+    "personalization": {
+      "badge": "高级选项",
+      "title": "您的机器。您的名字。",
+      "description": "每台绕线机均可按要求个性化定制。让它真正属于您。",
+      "feature1": "您的名字或首字母印在机器上",
+      "feature2": "外壳颜色可按要求选择",
+      "feature3": "欢迎机构订单：大学标志、乐团品牌、毕业礼品"
+    },
+    "howToOrder": {
+      "title": "如何订购",
+      "subtitle": "没有网店，没有结账。只需简单的邮件交流。",
+      "steps": {
+        "email": {
+          "title": "发送邮件",
+          "description": "将您的订单发送至 info@hippermachines.com"
+        },
+        "confirm": {
+          "title": "我们确认",
+          "description": "我们确认详情并发送付款信息"
+        },
+        "build": {
+          "title": "我们制作",
+          "description": "您的机器手工制作并发货"
+        },
+        "wind": {
+          "title": "开始绕线",
+          "description": "每次都完美"
+        }
+      },
+      "cta": "通过邮件订购"
+    },
+    "machines": {
+      "title": "我们的产品",
+      "subtitle": "专业簧片制作的精密工具",
+      "newBadge": "新品",
+      "priceFrom": "",
+      "viewAll": "查看所有产品",
+      "windingMachine": {
+        "name": "绕线机",
+        "desc": "2分钟内完美缠绕。张力一致，图案干净。"
+      },
+      "outerPlaner": {
+        "name": "外刮机",
+        "desc": "一次完成外形加工。无需浸泡。硬质合金刀头。"
+      },
+      "innerPlaner": {
+        "name": "内刮机",
+        "desc": "精确内刮，可选中心凹陷。可加工干燥芦苇。"
+      }
+    },
+    "finalCta": {
+      "title": "准备好每周节省数小时了吗？",
+      "subtitle": "立即订购您的绕线机。巴伐利亚手工制作，全球配送。",
+      "orderButton": "通过邮件订购",
+      "contactButton": "提问咨询"
     }
   },
   "about": {
