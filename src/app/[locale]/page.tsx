@@ -137,7 +137,7 @@ export default function HomePage() {
 
             {/* Hero Video */}
             <div className="relative">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-gray-900">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-[#FAF8F5] dark:bg-gray-900">
                 <video
                   autoPlay
                   loop
