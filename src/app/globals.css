@@ -3,6 +3,23 @@
 /* Enable class-based dark mode for Tailwind v4 - use :is() for higher specificity */
 @custom-variant dark (&:is(.dark, .dark *));
 
+/* Prevent white flash on navigation - set initial colors based on system preference */
+html {
+  background-color: #FAF8F5;
+  color-scheme: light dark;
+}
+
+html.dark {
+  background-color: #1A1816;
+}
+
+/* For browsers that support prefers-color-scheme before JS loads */
+@media (prefers-color-scheme: dark) {
+  html:not(.light) {
+    background-color: #1A1816;
+  }
+}
+
 :root {
   /* Light mode - Warm, inviting colors */
   --background: #FAF8F5;

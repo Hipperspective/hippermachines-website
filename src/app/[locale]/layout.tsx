@@ -80,17 +80,27 @@ export default async function LocaleLayout({
 
   const themeScript = `
     (function() {
-      const stored = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = stored === 'dark' || (!stored && prefersDark);
-      if (isDark) document.documentElement.classList.add('dark');
+      try {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = stored === 'dark' || (!stored && prefersDark);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        }
+      } catch (e) {}
     })();
   `;
 
   return (
     <html lang={locale} suppressHydrationWarning className={`${playfairDisplay.variable} ${lato.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+          suppressHydrationWarning
+        />
       </head>
       <body className="font-body flex flex-col min-h-screen bg-background text-foreground">
         <NextIntlClientProvider messages={messages}>
