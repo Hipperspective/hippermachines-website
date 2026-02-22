@@ -3,9 +3,43 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 export default function HomePage() {
   const t = useTranslations('home');
+
+  // Mobile carousel state (video + photos)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const totalSlides = 5; // 1 video + 4 photos
+
+  const heroImages = [
+    '/images/products/wickelmaschine-1.jpg',
+    '/images/products/wickelmaschine-2.jpg',
+    '/images/products/wickelmaschine-3.jpg',
+    '/images/products/wickelmaschine-4.jpg',
+  ];
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  }, []);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  }, []);
+
+  // Auto-advance for photos (not video)
+  useEffect(() => {
+    if (currentSlide === 0) {
+      // Video slide - wait for video to loop or set longer timeout
+      const timeout = setTimeout(nextSlide, 8000);
+      return () => clearTimeout(timeout);
+    } else {
+      // Photo slides - 4 seconds each
+      const timeout = setTimeout(nextSlide, 4000);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentSlide, nextSlide]);
 
   const windingFeatures = [
     { key: 'speed', icon: ClockIcon },
@@ -70,19 +104,73 @@ export default function HomePage() {
             {t('hero.title')}
           </h1>
 
-          {/* Video */}
+          {/* Video + Photo Carousel */}
           <div className="relative mb-6">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              {/* Video (slide 0) */}
               <video
+                ref={videoRef}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  currentSlide === 0 ? 'opacity-100' : 'opacity-0'
+                }`}
                 poster="/images/products/wickelmaschine-1.jpg"
               >
                 <source src="/videos/wickelmaschine.m4v" type="video/mp4" />
               </video>
+
+              {/* Photos (slides 1-4) */}
+              {heroImages.map((src, index) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt={`Wickelmaschine ${index + 1}`}
+                  fill
+                  className={`object-cover transition-opacity duration-500 ${
+                    currentSlide === index + 1 ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  priority={index === 0}
+                />
+              ))}
+
+              {/* Navigation arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 dark:bg-black/50 flex items-center justify-center shadow-lg"
+                aria-label="Previous"
+              >
+                <svg className="w-4 h-4 text-gray-800 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 dark:bg-black/50 flex items-center justify-center shadow-lg"
+                aria-label="Next"
+              >
+                <svg className="w-4 h-4 text-gray-800 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Dots indicator */}
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {Array.from({ length: totalSlides }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`h-2 rounded-full transition-all ${
+                      index === currentSlide
+                        ? 'bg-white w-6'
+                        : 'bg-white/50 w-2'
+                    }`}
+                    aria-label={index === 0 ? 'Video' : `Photo ${index}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
