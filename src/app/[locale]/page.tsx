@@ -62,53 +62,46 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero Section - Wickelmaschine Focus */}
-      <section className="relative bg-[#FAF8F5] dark:bg-[#1A1816] overflow-hidden">
-        {/* Subtle decorative elements */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-100/40 dark:bg-primary-900/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#F0EDE8] dark:bg-[#252220] rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+      {/* Hero Section - Fullscreen Video Background */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            poster="/images/products/wickelmaschine-1.jpg"
+          >
+            <source src="/videos/wickelmaschine.m4v" type="video/mp4" />
+          </video>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+        </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
-          {/* Mobile Layout */}
-          <div className="lg:hidden">
-            {/* Headline */}
-            <h1 className="font-heading text-4xl sm:text-5xl font-semibold text-gray-900 dark:text-white mb-6 leading-[1.1] text-center">
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
+          <div className="max-w-2xl">
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-[1.1]">
               {t('hero.title')}
             </h1>
 
-            {/* Video */}
-            <div className="relative mb-6">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-[#FAF8F5] dark:bg-gray-900">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
-                  poster="/images/products/wickelmaschine-1.jpg"
-                >
-                  <source src="/videos/wickelmaschine.m4v" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-
-            {/* Subtitle */}
-            <p className="font-body text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4 leading-relaxed text-center">
+            <p className="font-body text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
               {t('hero.subtitle')}
             </p>
 
             {/* Price Display */}
-            <div className="mb-8 text-center">
-              <span className="font-heading text-3xl sm:text-4xl font-bold text-primary-600 dark:text-primary-400">
+            <div className="mb-8">
+              <span className="font-heading text-3xl sm:text-4xl font-bold text-primary-400">
                 {t('hero.priceFrom')}
               </span>
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="mailto:info@hippermachines.com?subject=Wickelmaschine%20Order%20Inquiry"
-                className="inline-flex items-center justify-center bg-primary-600 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:bg-primary-700 transition-all duration-200"
+                className="inline-flex items-center justify-center bg-primary-600 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 transition-all duration-200"
               >
                 {t('hero.orderNow')}
                 <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,7 +110,7 @@ export default function HomePage() {
               </a>
               <button
                 onClick={() => scrollToSection('features')}
-                className="inline-flex items-center justify-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-7 py-3.5 rounded-lg font-body font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
+                className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:border-white/50 hover:bg-white/10 transition-colors"
               >
                 {t('hero.learnMore')}
                 <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,22 +120,22 @@ export default function HomePage() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 font-body text-sm text-gray-600 dark:text-gray-400">
+            <div className="mt-10 pt-8 border-t border-white/20">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3 font-body text-sm text-gray-300">
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 mr-2 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span>{t('trust.handmade')}</span>
                 </div>
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 mr-2 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span>{t('trust.worldwide')}</span>
                 </div>
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 mr-2 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span>{t('trust.byMusicians')}</span>
@@ -150,98 +143,13 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Desktop Layout */}
-          <div className="hidden lg:grid lg:grid-cols-2 gap-16 items-center">
-            {/* Text Content */}
-            <div className="max-w-xl">
-              <h1 className="font-heading text-6xl font-semibold text-gray-900 dark:text-white mb-6 leading-[1.1]">
-                {t('hero.title')}
-              </h1>
-
-              <p className="font-body text-xl text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                {t('hero.subtitle')}
-              </p>
-
-              {/* Price Display */}
-              <div className="mb-8">
-                <span className="font-heading text-4xl font-bold text-primary-600 dark:text-primary-400">
-                  {t('hero.priceFrom')}
-                </span>
-              </div>
-
-              <div className="flex flex-row gap-4">
-                <a
-                  href="mailto:info@hippermachines.com?subject=Wickelmaschine%20Order%20Inquiry"
-                  className="inline-flex items-center justify-center bg-primary-600 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 transition-all duration-200"
-                >
-                  {t('hero.orderNow')}
-                  <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </a>
-                <button
-                  onClick={() => scrollToSection('features')}
-                  className="inline-flex items-center justify-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-7 py-3.5 rounded-lg font-body font-medium hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white dark:hover:bg-[#252220] transition-colors"
-                >
-                  {t('hero.learnMore')}
-                  <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  </svg>
-                </button>
-              </div>
-
-              {/* Trust Indicators */}
-              <div className="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <div className="flex flex-wrap items-center gap-x-6 gap-y-3 font-body text-sm text-gray-600 dark:text-gray-400">
-                  <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{t('trust.handmade')}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{t('trust.worldwide')}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{t('trust.byMusicians')}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Hero Video */}
-            <div className="relative">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-gray-900/10 dark:shadow-none bg-[#FAF8F5] dark:bg-gray-900">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
-                  poster="/images/products/wickelmaschine-1.jpg"
-                >
-                  <source src="/videos/wickelmaschine.m4v" type="video/mp4" />
-                  {/* Fallback image if video doesn't load */}
-                  <Image
-                    src="/images/products/wickelmaschine-1.jpg"
-                    alt="Wickelmaschine - Bassoon Reed Winding Machine"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </video>
-              </div>
-              {/* Floating accent */}
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary-600 rounded-2xl -z-10" />
-            </div>
-          </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg className="w-6 h-6 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </section>
 
