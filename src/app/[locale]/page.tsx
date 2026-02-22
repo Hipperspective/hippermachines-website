@@ -62,8 +62,92 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero Section - Fullscreen Video Background */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Hero Section - Mobile: Stacked Layout */}
+      <section className="md:hidden relative bg-[#FAF8F5] dark:bg-[#1A1816] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+          {/* Headline */}
+          <h1 className="font-heading text-3xl sm:text-4xl font-semibold text-gray-900 dark:text-white mb-6 leading-[1.1] text-center">
+            {t('hero.title')}
+          </h1>
+
+          {/* Video */}
+          <div className="relative mb-6">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                poster="/images/products/wickelmaschine-1.jpg"
+              >
+                <source src="/videos/wickelmaschine.m4v" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          {/* Subtitle */}
+          <p className="font-body text-lg text-gray-600 dark:text-gray-400 mb-4 leading-relaxed text-center">
+            {t('hero.subtitle')}
+          </p>
+
+          {/* Price Display */}
+          <div className="mb-6 text-center">
+            <span className="font-heading text-2xl sm:text-3xl font-bold text-primary-600 dark:text-primary-400">
+              {t('hero.priceFrom')}
+            </span>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-col gap-3">
+            <a
+              href="mailto:info@hippermachines.com?subject=Wickelmaschine%20Order%20Inquiry"
+              className="inline-flex items-center justify-center bg-primary-600 text-white px-6 py-3 rounded-lg font-body font-medium hover:bg-primary-700 transition-all duration-200"
+            >
+              {t('hero.orderNow')}
+              <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <button
+              onClick={() => scrollToSection('features')}
+              className="inline-flex items-center justify-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-body font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
+            >
+              {t('hero.learnMore')}
+              <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-body text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{t('trust.handmade')}</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{t('trust.worldwide')}</span>
+              </div>
+              <div className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{t('trust.byMusicians')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Section - Desktop/iPad: Fullscreen Video Background */}
+      <section className="hidden md:flex relative min-h-[90vh] items-center overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0">
           <video
@@ -81,24 +165,24 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
           <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-[1.1]">
+            <h1 className="font-heading text-5xl lg:text-6xl font-semibold text-white mb-6 leading-[1.1]">
               {t('hero.title')}
             </h1>
 
-            <p className="font-body text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
+            <p className="font-body text-xl text-gray-200 mb-6 leading-relaxed">
               {t('hero.subtitle')}
             </p>
 
             {/* Price Display */}
             <div className="mb-8">
-              <span className="font-heading text-3xl sm:text-4xl font-bold text-primary-400">
+              <span className="font-heading text-4xl font-bold text-primary-400">
                 {t('hero.priceFrom')}
               </span>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-row gap-4">
               <a
                 href="mailto:info@hippermachines.com?subject=Wickelmaschine%20Order%20Inquiry"
                 className="inline-flex items-center justify-center bg-primary-600 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 transition-all duration-200"
