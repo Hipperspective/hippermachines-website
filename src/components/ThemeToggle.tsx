@@ -10,20 +10,26 @@ export default function ThemeToggle() {
     setMounted(true);
     // Check localStorage first, then system preference
     const stored = localStorage.getItem('theme');
+    const d = document.documentElement;
+    let dark = false;
     if (stored) {
-      setIsDark(stored === 'dark');
-      document.documentElement.classList.toggle('dark', stored === 'dark');
+      dark = stored === 'dark';
     } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setIsDark(prefersDark);
-      document.documentElement.classList.toggle('dark', prefersDark);
+      dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
+    setIsDark(dark);
+    d.classList.remove('dark', 'light');
+    d.classList.add(dark ? 'dark' : 'light');
+    d.style.setProperty('--header-bg', dark ? '#1A1816' : '#FFFFFF');
   }, []);
 
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
-    document.documentElement.classList.toggle('dark', newTheme);
+    const d = document.documentElement;
+    d.classList.remove('dark', 'light');
+    d.classList.add(newTheme ? 'dark' : 'light');
+    d.style.setProperty('--header-bg', newTheme ? '#1A1816' : '#FFFFFF');
     localStorage.setItem('theme', newTheme ? 'dark' : 'light');
   };
 
