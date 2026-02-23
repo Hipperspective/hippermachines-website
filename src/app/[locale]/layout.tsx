@@ -87,7 +87,6 @@ export default async function LocaleLayout({
         d.classList.add(isDark ? 'dark' : 'light');
         d.style.backgroundColor = isDark ? '#1A1816' : '#FAF8F5';
         d.style.colorScheme = isDark ? 'dark' : 'light';
-        d.style.setProperty('--header-bg', isDark ? '#1A1816' : '#FFFFFF');
       } catch (e) {}
     })();
   `;

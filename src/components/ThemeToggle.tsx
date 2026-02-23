@@ -20,7 +20,6 @@ export default function ThemeToggle() {
     setIsDark(dark);
     d.classList.remove('dark', 'light');
     d.classList.add(dark ? 'dark' : 'light');
-    d.style.setProperty('--header-bg', dark ? '#1A1816' : '#FFFFFF');
   }, []);
 
   const toggleTheme = () => {
@@ -29,7 +28,6 @@ export default function ThemeToggle() {
     const d = document.documentElement;
     d.classList.remove('dark', 'light');
     d.classList.add(newTheme ? 'dark' : 'light');
-    d.style.setProperty('--header-bg', newTheme ? '#1A1816' : '#FFFFFF');
     localStorage.setItem('theme', newTheme ? 'dark' : 'light');
   };
 
