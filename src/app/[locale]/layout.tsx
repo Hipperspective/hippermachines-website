@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Lato } from 'next/font/google';
+import { Fira_Sans } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -8,21 +8,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../globals.css';
 
-// Playfair Display - Elegant serif for headlines
-// Classic, timeless, sophisticated
-const playfairDisplay = Playfair_Display({
+// Fira Sans - Modern, technical, highly readable
+const firaSans = Fira_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-heading',
-  display: 'swap',
-});
-
-// Lato - Clean sans-serif for body
-// Friendly, professional, highly readable
-const lato = Lato({
-  subsets: ['latin'],
-  weight: ['300', '400', '700'],
-  variable: '--font-body',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-main',
   display: 'swap',
 });
 
@@ -95,7 +85,7 @@ export default async function LocaleLayout({
   `;
 
   return (
-    <html lang={locale} suppressHydrationWarning className={`${playfairDisplay.variable} ${lato.variable}`}>
+    <html lang={locale} suppressHydrationWarning className={firaSans.variable}>
       <head>
         <script
           dangerouslySetInnerHTML={{ __html: themeScript }}
