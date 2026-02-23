@@ -80,7 +80,6 @@ export default async function LocaleLayout({
     (function() {
       try {
         var d = document.documentElement;
-        var b = document.body;
         var stored = localStorage.getItem('theme');
         var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         var isDark = stored === 'dark' || (!stored && prefersDark);
@@ -88,6 +87,7 @@ export default async function LocaleLayout({
         d.classList.add(isDark ? 'dark' : 'light');
         d.style.backgroundColor = isDark ? '#1A1816' : '#FAF8F5';
         d.style.colorScheme = isDark ? 'dark' : 'light';
+        d.style.setProperty('--header-bg', isDark ? '#1A1816' : '#FFFFFF');
       } catch (e) {}
     })();
   `;

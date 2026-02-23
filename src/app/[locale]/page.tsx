@@ -172,7 +172,7 @@ export default function HomePage() {
 
           {/* Price Display */}
           <div className="mb-6 text-center">
-            <span className="font-heading text-2xl sm:text-3xl font-bold text-primary-600 dark:text-red-500">
+            <span className="font-heading text-2xl sm:text-3xl font-bold text-primary-600 dark:text-red-400">
               {t('hero.priceFrom')}
             </span>
           </div>
@@ -483,7 +483,7 @@ export default function HomePage() {
                   <p className="font-body text-sm text-gray-600 dark:text-gray-400 mb-4">
                     {t(machine.descKey)}
                   </p>
-                  <p className="font-body text-lg font-semibold text-primary-600 dark:text-red-500">
+                  <p className="font-body text-lg font-semibold text-primary-600 dark:text-red-400">
                     {t('machines.priceFrom')} {machine.price} EUR
                   </p>
                 </div>

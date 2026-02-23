@@ -21,16 +21,21 @@ html.dark {
 @media (prefers-color-scheme: dark) {
   html:not(.light):not(.dark) {
     background-color: #1A1816;
+    --header-bg: #1A1816;
   }
 }
 
 @media (prefers-color-scheme: light) {
   html:not(.light):not(.dark) {
     background-color: #FAF8F5;
+    --header-bg: #FFFFFF;
   }
 }
 
 :root {
+  /* Header background - set by JS, fallback here */
+  --header-bg: #FFFFFF;
+
   /* Light mode - Warm, inviting colors */
   --background: #FAF8F5;
   --foreground: #1A1A1A;
@@ -58,6 +63,9 @@ html.dark {
 }
 
 .dark {
+  /* Header background for dark mode */
+  --header-bg: #1A1816;
+
   /* Dark mode - Warm, cozy dark colors */
   --background: #1A1816;
   --foreground: #F5F3F0;
