@@ -41,15 +41,6 @@ export default function HomePage() {
     }
   }, [currentSlide, nextSlide]);
 
-  const windingFeatures = [
-    { key: 'speed', icon: ClockIcon },
-    { key: 'aluminum', icon: ShieldIcon },
-    { key: 'ambidextrous', icon: HandIcon },
-    { key: 'mandrels', icon: ToolIcon },
-    { key: 'compact', icon: CubeIcon },
-    { key: 'tension', icon: GaugeIcon },
-  ];
-
   const orderSteps = [
     { key: 'email', icon: EmailIcon, number: 1 },
     { key: 'confirm', icon: CheckCircleIcon, number: 2 },
@@ -198,7 +189,7 @@ export default function HomePage() {
               </svg>
             </a>
             <button
-              onClick={() => scrollToSection('features')}
+              onClick={() => scrollToSection('machines')}
               className="inline-flex items-center justify-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-body font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
             >
               {t('hero.learnMore')}
@@ -281,7 +272,7 @@ export default function HomePage() {
                 </svg>
               </a>
               <button
-                onClick={() => scrollToSection('features')}
+                onClick={() => scrollToSection('machines')}
                 className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:border-white/50 hover:bg-white/10 transition-colors"
               >
                 {t('hero.learnMore')}
@@ -360,39 +351,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Features Section */}
-      <section id="features" className="py-16 sm:py-24 bg-[#FAF8F5] dark:bg-[#1A1816]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4">
-              {t('features.title')}
-            </h2>
-            <p className="font-body text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              {t('features.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {windingFeatures.map(({ key, icon: Icon }) => (
-              <div
-                key={key}
-                className="p-6 rounded-2xl bg-white dark:bg-[#252220] shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 mb-4">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <h3 className="font-heading text-lg font-medium text-gray-900 dark:text-white mb-2">
-                  {t(`features.${key}.title`)}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm font-body">
-                  {t(`features.${key}.description`)}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -487,7 +445,7 @@ export default function HomePage() {
       </section>
 
       {/* Our Machines Section */}
-      <section className="py-16 sm:py-24 bg-[#F0EDE8] dark:bg-[#252220]">
+      <section id="machines" className="py-16 sm:py-24 bg-[#F0EDE8] dark:bg-[#252220]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4">
@@ -581,47 +539,6 @@ function ClockIcon({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-  );
-}
-
-function ShieldIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-    </svg>
-  );
-}
-
-function HandIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
-    </svg>
-  );
-}
-
-function ToolIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-    </svg>
-  );
-}
-
-function CubeIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-    </svg>
-  );
-}
-
-function GaugeIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   );
 }
