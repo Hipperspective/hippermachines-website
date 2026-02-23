@@ -79,15 +79,15 @@ export default async function LocaleLayout({
   const themeScript = `
     (function() {
       try {
-        const stored = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const isDark = stored === 'dark' || (!stored && prefersDark);
-        if (isDark) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          document.documentElement.classList.add('light');
-        }
+        var d = document.documentElement;
+        var b = document.body;
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = stored === 'dark' || (!stored && prefersDark);
+        d.classList.remove('dark', 'light');
+        d.classList.add(isDark ? 'dark' : 'light');
+        d.style.backgroundColor = isDark ? '#1A1816' : '#FAF8F5';
+        d.style.colorScheme = isDark ? 'dark' : 'light';
       } catch (e) {}
     })();
   `;
