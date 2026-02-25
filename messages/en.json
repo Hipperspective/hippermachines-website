@@ -48,14 +48,14 @@
       "byMusicians": "By Musicians for Musicians"
     },
     "problem": {
-      "title": "The Problem with Hand Winding",
+      "title": "Sound Familiar?",
       "time": {
         "title": "Time-Consuming",
-        "description": "5-10 minutes per reed, just for winding the turban. That adds up to hours every week."
+        "description": "5-10 minutes per reed, just for winding. That adds up to hours every week."
       },
       "strain": {
         "title": "Strain & Inconsistency",
-        "description": "Aching fingers, inconsistent tension, and uneven patterns. Every reed is a struggle."
+        "description": "Aching fingers, inconsistent tension, and uneven patterns."
       }
     },
     "features": {
@@ -63,27 +63,12 @@
       "subtitle": "Designed by a bassoonist, for bassoonists. Every detail matters.",
       "speed": {
         "title": "Under 2 Minutes",
-        "description": "Complete turban pattern with consistent tension and clean results."
-      },
-      "aluminum": {
-        "title": "Aluminum Precision",
-        "description": "All contact surfaces machined from high-quality aluminum for durability."
-      },
-      "ambidextrous": {
-        "title": "Left & Right Handed",
-        "description": "Easily switchable for both left and right-handed musicians."
-      },
-      "mandrels": {
-        "title": "Bassoon & Contrabassoon",
-        "description": "Both mandrel sizes included as standard."
+        "description": "Fully bound reed with consistent tension and clean results."
       },
       "compact": {
         "title": "Compact Design",
-        "description": "Minimal footprint, ready to use immediately. No complex setup."
-      },
-      "tension": {
-        "title": "Consistent Tension",
-        "description": "Even thread tension throughout. No more loose spots or overtightening."
+        "description": "Minimal footprint, ready to use immediately. No complex setup.",
+        "sub": "Ready to go out of the box."
       }
     },
     "personalization": {
@@ -117,6 +102,10 @@
       },
       "cta": "Order via Email"
     },
+    "maker": {
+      "text1": "I'm Christoph Hipper — bassoonist and machine builder by passion. Like you, I know the frustration: hours at the workbench, and still not every reed turns out the way you want. That experience drove me to develop better tools.",
+      "text2": "Every machine is handcrafted here in my workshop in Rohrdorf, near Salzburg. I know every part, every step. And I personally stand behind the quality — with advice, service, and over 30 years of experience in reed making."
+    },
     "machines": {
       "title": "Our Machines",
       "subtitle": "Precision tools for professional reed making",
@@ -138,7 +127,7 @@
     },
     "finalCta": {
       "title": "Ready to Save Hours Every Week?",
-      "subtitle": "Order your Wickelmaschine today. Handcrafted in Bavaria, shipped worldwide.",
+      "subtitle": "Order your Wickelmaschine today. Worldwide shipping.",
       "orderButton": "Order via Email",
       "contactButton": "Ask a Question"
     }

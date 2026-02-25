@@ -51,11 +51,11 @@
       "title": "Das kennen Sie",
       "time": {
         "title": "Zeitaufwändig",
-        "description": "5–10 Minuten pro Rohr, nur für das Wickeln des Türkenbunds. Das summiert sich zu Stunden pro Woche."
+        "description": "5–10 Minuten pro Rohr, nur für das Wickeln. Das summiert sich zu Stunden pro Woche."
       },
       "strain": {
         "title": "Belastung & Ungleichmäßigkeit",
-        "description": "Schmerzende Finger, ungleichmäßige Spannung und unregelmäßige Muster. Jedes Rohr ist ein Kampf."
+        "description": "Schmerzende Finger, ungleichmäßige Spannung und unregelmäßige Muster."
       }
     },
     "features": {
@@ -63,27 +63,12 @@
       "subtitle": "Entwickelt von einem Fagottisten, für Fagottisten. Jedes Detail zählt.",
       "speed": {
         "title": "Unter 2 Minuten",
-        "description": "Vollständiges Türkenbund-Muster mit gleichmäßiger Spannung und sauberem Ergebnis."
-      },
-      "aluminum": {
-        "title": "Aluminium-Präzision",
-        "description": "Alle Kontaktflächen aus hochwertigem Aluminium für Langlebigkeit."
-      },
-      "ambidextrous": {
-        "title": "Links- & Rechtshänder",
-        "description": "Einfach umstellbar für beide Händigkeiten."
-      },
-      "mandrels": {
-        "title": "Fagott & Kontrafagott",
-        "description": "Beide Dorngrößen im Lieferumfang enthalten."
+        "description": "Fertig gebundenes Rohr mit gleichmäßiger Spannung und sauberem Ergebnis."
       },
       "compact": {
         "title": "Kompaktes Design",
-        "description": "Minimaler Platzbedarf, sofort einsatzbereit. Kein komplizierter Aufbau."
-      },
-      "tension": {
-        "title": "Gleichmäßige Spannung",
-        "description": "Konstante Fadenspannung durchgehend. Keine losen Stellen oder Überspannung mehr."
+        "description": "Minimaler Platzbedarf, sofort einsatzbereit. Kein komplizierter Aufbau.",
+        "sub": "Out of the box funktionsbereit."
       }
     },
     "personalization": {
@@ -117,6 +102,10 @@
       },
       "cta": "Jetzt per Email bestellen"
     },
+    "maker": {
+      "text1": "Ich bin Christoph Hipper – Fagottist und Maschinenbauer aus Leidenschaft. Wie Sie kenne ich die Frustration: Stundenlang am Schabetisch, und trotzdem wird nicht jedes Rohr so, wie man es sich wünscht. Diese Erfahrung hat mich angetrieben, bessere Werkzeuge zu entwickeln.",
+      "text2": "Jede Maschine wird hier in meiner Werkstatt in Rohrdorf, nahe Salzburg, von Hand gefertigt. Ich kenne jedes Teil, jeden Handgriff. Und ich stehe persönlich hinter der Qualität – mit Beratung, Service und der Erfahrung von über 30 Jahren im Rohrbau."
+    },
     "machines": {
       "title": "Unsere Maschinen",
       "subtitle": "Präzisionswerkzeuge für professionellen Rohrbau",
@@ -138,7 +127,7 @@
     },
     "finalCta": {
       "title": "Bereit, Stunden pro Woche zu sparen?",
-      "subtitle": "Bestelle deine Wickelmaschine noch heute. Handgefertigt in Bayern, weltweiter Versand.",
+      "subtitle": "Bestelle deine Wickelmaschine noch heute. Weltweiter Versand.",
       "orderButton": "Per Email bestellen",
       "contactButton": "Frage stellen"
     }

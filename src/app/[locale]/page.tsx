@@ -293,6 +293,82 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Problem Section */}
+      <section className="py-20 sm:py-32 bg-[#F0EDE8] dark:bg-[#252220]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white leading-[1.1] text-center mb-12">
+            {t('problem.title')}
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-[#1A1816] rounded-2xl p-8">
+              <h3 className="font-heading text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {t('problem.time.title')}
+              </h3>
+              <p className="font-body text-gray-600 dark:text-gray-400 leading-relaxed">
+                {t('problem.time.description')}
+              </p>
+            </div>
+            <div className="bg-white dark:bg-[#1A1816] rounded-2xl p-8">
+              <h3 className="font-heading text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {t('problem.strain.title')}
+              </h3>
+              <p className="font-body text-gray-600 dark:text-gray-400 leading-relaxed">
+                {t('problem.strain.description')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 sm:py-32 bg-[#FAF8F5] dark:bg-[#1A1816]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white leading-[1.1] mb-4">
+              {t('features.title')}
+            </h2>
+            <p className="font-body text-lg text-gray-600 dark:text-gray-400">
+              {t('features.subtitle')}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-[#252220] rounded-2xl p-8">
+              <h3 className="font-heading text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {t('features.speed.title')}
+              </h3>
+              <p className="font-body text-gray-600 dark:text-gray-400 leading-relaxed">
+                {t('features.speed.description')}
+              </p>
+            </div>
+            <div className="bg-white dark:bg-[#252220] rounded-2xl p-8">
+              <h3 className="font-heading text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {t('features.compact.title')}
+              </h3>
+              <p className="font-body text-gray-600 dark:text-gray-400 leading-relaxed mb-2">
+                {t('features.compact.description')}
+              </p>
+              <p className="font-body text-sm font-medium text-primary-600 dark:text-primary-400">
+                {t('features.compact.sub')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Maker Section */}
+      <section className="py-20 sm:py-32 bg-gray-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <p className="font-body text-lg text-gray-300 leading-relaxed mb-6">
+              {t('maker.text1')}
+            </p>
+            <p className="font-body text-lg text-gray-300 leading-relaxed">
+              {t('maker.text2')}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Our Machines Section */}
       <section id="machines" className="py-20 sm:py-32 bg-[#F0EDE8] dark:bg-[#252220]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
