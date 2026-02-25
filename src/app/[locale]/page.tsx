@@ -300,48 +300,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Personalization Section */}
-      <section className="py-20 sm:py-32 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Image — shown first on mobile, left on desktop */}
-            <div className="order-1 lg:order-1">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/products/wickelmaschine-2.jpg"
-                  alt="Personalized Wickelmaschine"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            {/* Text side */}
-            <div className="order-2 lg:order-2">
-              <h2 className="font-heading text-4xl md:text-5xl font-semibold leading-[1.1] mb-6">
-                {t('personalization.title')}
-              </h2>
-              <p className="font-body text-lg text-gray-300 mb-10 leading-relaxed">
-                {t('personalization.description')}
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
-                  <span className="text-gray-300 font-body">{t('personalization.feature1')}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
-                  <span className="text-gray-300 font-body">{t('personalization.feature2')}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
-                  <span className="text-gray-300 font-body">{t('personalization.feature3')}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How to Order Section */}
       <section className="py-20 sm:py-32 bg-[#FAF8F5] dark:bg-[#1A1816]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
