@@ -41,13 +41,6 @@ export default function HomePage() {
     }
   }, [currentSlide, nextSlide]);
 
-  const orderSteps = [
-    { key: 'email', number: 1 },
-    { key: 'confirm', number: 2 },
-    { key: 'build', number: 3 },
-    { key: 'wind', number: 4 },
-  ];
-
   const machines = [
     {
       id: 'bassoon-winding-machine',
@@ -297,39 +290,6 @@ export default function HomePage() {
           <svg className="w-6 h-6 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
-        </div>
-      </section>
-
-      {/* How to Order Section */}
-      <section className="py-20 sm:py-32 bg-[#FAF8F5] dark:bg-[#1A1816]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white leading-[1.1] mb-4">
-              {t('howToOrder.title')}
-            </h2>
-            <p className="font-body text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              {t('howToOrder.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {orderSteps.map(({ key, number }) => (
-              <div
-                key={key}
-                className="bg-white dark:bg-[#252220] rounded-2xl p-8 text-center"
-              >
-                <span className="block font-heading text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">
-                  {number}
-                </span>
-                <h3 className="font-heading text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {t(`howToOrder.steps.${key}.title`)}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm font-body leading-relaxed">
-                  {t(`howToOrder.steps.${key}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
