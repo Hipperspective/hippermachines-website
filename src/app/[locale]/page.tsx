@@ -42,10 +42,10 @@ export default function HomePage() {
   }, [currentSlide, nextSlide]);
 
   const orderSteps = [
-    { key: 'email', icon: EmailIcon, number: 1 },
-    { key: 'confirm', icon: CheckCircleIcon, number: 2 },
-    { key: 'build', icon: WrenchIcon, number: 3 },
-    { key: 'wind', icon: SparklesIcon, number: 4 },
+    { key: 'email', number: 1 },
+    { key: 'confirm', number: 2 },
+    { key: 'build', number: 3 },
+    { key: 'wind', number: 4 },
   ];
 
   const machines = [
@@ -56,7 +56,6 @@ export default function HomePage() {
       price: '349',
       image: '/images/products/wickelmaschine-1.jpg',
       href: '/products/bassoon/bassoon-winding-machine',
-      isNew: true,
     },
     {
       id: 'bassoon-outer-planer',
@@ -65,7 +64,6 @@ export default function HomePage() {
       price: '1,950',
       image: '/images/products/aussenhobel-1.jpg',
       href: '/products/bassoon/bassoon-outer-planer',
-      isNew: false,
     },
     {
       id: 'bassoon-inner-planer',
@@ -74,16 +72,8 @@ export default function HomePage() {
       price: '2,142',
       image: '/images/products/innenhobel-1.jpg',
       href: '/products/bassoon/bassoon-inner-planer',
-      isNew: false,
     },
   ];
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <div>
@@ -188,15 +178,12 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
-            <button
-              onClick={() => scrollToSection('machines')}
+            <a
+              href="#machines"
               className="inline-flex items-center justify-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-body font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
             >
               {t('hero.learnMore')}
-              <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </button>
+            </a>
           </div>
 
           {/* Trust Indicators */}
@@ -271,15 +258,12 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </a>
-              <button
-                onClick={() => scrollToSection('machines')}
+              <a
+                href="#machines"
                 className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-3.5 rounded-lg font-body font-medium hover:border-white/50 hover:bg-white/10 transition-colors"
               >
                 {t('hero.learnMore')}
-                <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </button>
+              </a>
             </div>
 
             {/* Trust Indicators */}
@@ -316,76 +300,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* The Problem Section */}
-      <section className="py-16 sm:py-20 bg-[#F0EDE8] dark:bg-[#252220]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-8">
-              {t('problem.title')}
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-8">
-              <div className="flex items-start text-left p-6 bg-white dark:bg-[#1A1816] rounded-xl">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center mr-4">
-                  <ClockIcon className="w-6 h-6 text-red-600 dark:text-red-400" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-medium text-gray-900 dark:text-white mb-2">
-                    {t('problem.time.title')}
-                  </h3>
-                  <p className="font-body text-sm text-gray-600 dark:text-gray-400">
-                    {t('problem.time.description')}
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start text-left p-6 bg-white dark:bg-[#1A1816] rounded-xl">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center mr-4">
-                  <HandStrainIcon className="w-6 h-6 text-red-600 dark:text-red-400" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-medium text-gray-900 dark:text-white mb-2">
-                    {t('problem.strain.title')}
-                  </h3>
-                  <p className="font-body text-sm text-gray-600 dark:text-gray-400">
-                    {t('problem.strain.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Personalization Section */}
-      <section className="py-16 sm:py-24 bg-gray-900 text-white">
+      <section className="py-20 sm:py-32 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block font-body font-medium text-sm tracking-wide text-primary-400 mb-3 uppercase">
-                {t('personalization.badge')}
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-6">
-                {t('personalization.title')}
-              </h2>
-              <p className="font-body text-lg text-gray-300 mb-8">
-                {t('personalization.description')}
-              </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <CheckIcon className="w-5 h-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-300 font-body">{t('personalization.feature1')}</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckIcon className="w-5 h-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-300 font-body">{t('personalization.feature2')}</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckIcon className="w-5 h-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-300 font-body">{t('personalization.feature3')}</span>
-                </li>
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Image — shown first on mobile, left on desktop */}
+            <div className="order-1 lg:order-1">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/products/wickelmaschine-2.jpg"
                   alt="Personalized Wickelmaschine"
@@ -393,17 +314,39 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-600 rounded-2xl -z-10" />
+            </div>
+            {/* Text side */}
+            <div className="order-2 lg:order-2">
+              <h2 className="font-heading text-4xl md:text-5xl font-semibold leading-[1.1] mb-6">
+                {t('personalization.title')}
+              </h2>
+              <p className="font-body text-lg text-gray-300 mb-10 leading-relaxed">
+                {t('personalization.description')}
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
+                  <span className="text-gray-300 font-body">{t('personalization.feature1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
+                  <span className="text-gray-300 font-body">{t('personalization.feature2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 font-bold mr-3 mt-0.5">—</span>
+                  <span className="text-gray-300 font-body">{t('personalization.feature3')}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
       {/* How to Order Section */}
-      <section className="py-16 sm:py-24 bg-[#FAF8F5] dark:bg-[#1A1816]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4">
+      <section className="py-20 sm:py-32 bg-[#FAF8F5] dark:bg-[#1A1816]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white leading-[1.1] mb-4">
               {t('howToOrder.title')}
             </h2>
             <p className="font-body text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -411,44 +354,32 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {orderSteps.map(({ key, icon: Icon, number }) => (
-              <div key={key} className="relative text-center p-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-600 text-white mb-4 relative">
-                  <Icon className="w-7 h-7" />
-                  <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gray-900 text-white text-sm font-bold flex items-center justify-center">
-                    {number}
-                  </span>
-                </div>
-                <h3 className="font-heading text-lg font-medium text-gray-900 dark:text-white mb-2">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {orderSteps.map(({ key, number }) => (
+              <div
+                key={key}
+                className="bg-white dark:bg-[#252220] rounded-2xl p-8 text-center"
+              >
+                <span className="block font-heading text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">
+                  {number}
+                </span>
+                <h3 className="font-heading text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   {t(`howToOrder.steps.${key}.title`)}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm font-body">
+                <p className="text-gray-600 dark:text-gray-400 text-sm font-body leading-relaxed">
                   {t(`howToOrder.steps.${key}.description`)}
                 </p>
               </div>
             ))}
           </div>
-
-          <div className="text-center">
-            <a
-              href="mailto:info@hippermachines.com?subject=Wickelmaschine%20Order%20Inquiry"
-              className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg font-body font-semibold uppercase tracking-wide hover:bg-primary-700 transition-colors"
-            >
-              {t('howToOrder.cta')}
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
       {/* Our Machines Section */}
-      <section id="machines" className="py-16 sm:py-24 bg-[#F0EDE8] dark:bg-[#252220]">
+      <section id="machines" className="py-20 sm:py-32 bg-[#F0EDE8] dark:bg-[#252220]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white leading-[1.1] mb-4">
               {t('machines.title')}
             </h2>
             <p className="font-body text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -461,23 +392,18 @@ export default function HomePage() {
               <Link
                 key={machine.id}
                 href={machine.href}
-                className="group block bg-white dark:bg-[#1A1816] rounded-2xl shadow-lg dark:shadow-[0_0_0_1px_rgba(255,255,255,0.05)] overflow-hidden hover:shadow-xl dark:hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] transition-all duration-500 hover:-translate-y-1"
+                className="group block bg-white dark:bg-[#1A1816] rounded-2xl overflow-hidden shadow-lg dark:shadow-[0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-xl dark:hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={machine.image}
                     alt={t(machine.nameKey)}
                     fill
                     className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
                   />
-                  {machine.isNew && (
-                    <span className="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                      {t('machines.newBadge')}
-                    </span>
-                  )}
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading text-xl font-medium text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                  <h3 className="font-heading text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                     {t(machine.nameKey)}
                   </h3>
                   <p className="font-body text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -491,27 +417,24 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link
               href="/products/bassoon"
-              className="inline-flex items-center justify-center text-primary-600 dark:text-primary-400 font-body font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+              className="inline-flex items-center justify-center text-primary-600 dark:text-primary-400 font-body font-semibold text-lg hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
             >
               {t('machines.viewAll')}
-              <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
             </Link>
           </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 sm:py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-white mb-4">
+      <section className="py-20 sm:py-32 bg-gray-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-white leading-[1.1] mb-6">
             {t('finalCta.title')}
           </h2>
-          <p className="font-body text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+          <p className="font-body text-lg text-gray-400 max-w-2xl mx-auto mb-10">
             {t('finalCta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -534,59 +457,3 @@ export default function HomePage() {
   );
 }
 
-// Icon Components
-function ClockIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-  );
-}
-
-function HandStrainIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-    </svg>
-  );
-}
-
-function CheckIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-  );
-}
-
-function EmailIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>
-  );
-}
-
-function CheckCircleIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-  );
-}
-
-function WrenchIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-    </svg>
-  );
-}
-
-function SparklesIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-    </svg>
-  );
-}
