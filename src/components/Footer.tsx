@@ -7,7 +7,6 @@ import Image from 'next/image';
 export default function Footer() {
   const t = useTranslations('navigation');
   const tCommon = useTranslations('common');
-  const tMetadata = useTranslations('metadata');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -29,9 +28,6 @@ export default function Footer() {
                 <span className="font-body font-light tracking-[0.25em] uppercase text-[9px] text-gray-400">Machines</span>
               </div>
             </div>
-            <p className="text-sm text-gray-400 mt-2 font-body">
-              {tMetadata('description')}
-            </p>
           </div>
 
           {/* Contact Information */}
